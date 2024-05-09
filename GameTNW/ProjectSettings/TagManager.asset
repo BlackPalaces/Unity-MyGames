@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Solid
   - 
   - 
   - 
@@ -46,4 +46,10 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3910751755
+    locked: 0
+  - name: Player
+    uniqueID: 3541674029
+    locked: 0
+  - name: Bin
+    uniqueID: 2150223083
     locked: 0
