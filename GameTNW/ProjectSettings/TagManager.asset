@@ -13,16 +13,8 @@ TagManager:
   - UI
   - 
   - 
-<<<<<<< Updated upstream
   - Solid
-=======
-<<<<<<< HEAD
-  - OJ
-=======
-  - Solid
->>>>>>> 8aed996265e71cdb34181cb828d9678f7ad53287
->>>>>>> Stashed changes
-  - 
+  - Interactable
   - 
   - 
   - 
@@ -49,19 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-  - name: Tilemap
-    uniqueID: 1238042201
-    locked: 0
-  - name: Foremap
-    uniqueID: 4068959617
-    locked: 0
-  - name: Player
-    uniqueID: 1997530087
-=======
->>>>>>> Stashed changes
   - name: Background
     uniqueID: 1914484089
     locked: 0
@@ -73,8 +52,4 @@ TagManager:
     locked: 0
   - name: Bin
     uniqueID: 2150223083
-<<<<<<< Updated upstream
-=======
->>>>>>> 8aed996265e71cdb34181cb828d9678f7ad53287
->>>>>>> Stashed changes
     locked: 0
