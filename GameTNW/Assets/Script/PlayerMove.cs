@@ -48,20 +48,11 @@ public class PlayerMove : MonoBehaviour
     }
     void Interact()
     {
-        // คำนวณเวกเตอร์ทิศทางที่มุมหันของตัวละคร
         var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        var interactPos = transform.position + facingDir;
 
-        // คำนวณตำแหน่งที่ต้องการวาดเส้น Debug Line
-        var interactPos = transform.position + facingDir.normalized * 0.3f; // ให้ปรับตำแหน่งเล็กน้อยด้วยการเทรนฟอร์ม 0.3f หรือค่าที่ต้องการ
-
-        Debug.Log("Interact Position: " + interactPos);
-        // วาดเส้น Debug Line จากตำแหน่งปัจจุบันไปยังตำแหน่งที่ต้องการ Interact
-        Debug.DrawLine(transform.position, interactPos, Color.blue, 1f);
-
-        // ตรวจสอบว่ามี Collider ใดๆ อยู่ในตำแหน่งที่ต้องการ Interact หรือไม่
+        //Debug.DrawLine(transform.position, interactPos, Color.blue, 1f);
         var collider = Physics2D.OverlapCircle(interactPos, 0.3f, interactableLayer);
-
-        // ถ้ามี Collider ใดๆ อยู่ในตำแหน่งที่ต้องการ Interact ให้เรียก Interact method ของ Interactable component ที่อยู่ใน Collider นั้น
         if (collider != null)
         {
             collider.GetComponent<Interactable>()?.Interact();
