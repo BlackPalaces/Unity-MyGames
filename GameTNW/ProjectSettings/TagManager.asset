@@ -53,3 +53,6 @@ TagManager:
   - name: ItemInMap
     uniqueID: 3935992925
     locked: 0
+  - name: Sun
+    uniqueID: 3333976091
+    locked: 0
