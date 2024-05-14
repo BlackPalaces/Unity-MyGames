@@ -41,18 +41,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 1914484089
-    locked: 0
-  - name: Background2
-    uniqueID: 226850677
-    locked: 0
-  - name: Foreground
-    uniqueID: 3910751755
-    locked: 0
-  - name: ItemInMap
-    uniqueID: 3935992925
-    locked: 0
-  - name: Sun
-    uniqueID: 3333976091
-    locked: 0
