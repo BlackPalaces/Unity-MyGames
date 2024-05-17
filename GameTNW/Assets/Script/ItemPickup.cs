@@ -64,6 +64,10 @@ public class ItemPickup : MonoBehaviour
     {
         Debug.Log("Item Picked Up!");
         // Add logic to pick up the item (e.g., add to inventory)
+        // Call AddItemToSlots function to add item to inventory slots
+        Sprite itemSprite = GetComponent<SpriteRenderer>().sprite; // Assuming the item has a SpriteRenderer component
+        FindObjectOfType<ActiveInventory>().AddItemToSlots(itemSprite);
+
         // Destroy itemCanvas only if it exists
         if (currentCanvas != null)
         {
@@ -71,4 +75,5 @@ public class ItemPickup : MonoBehaviour
         }
         Destroy(gameObject);  // Destroy the item after picking up
     }
+
 }

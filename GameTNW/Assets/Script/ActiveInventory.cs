@@ -54,4 +54,43 @@ public class ActiveInventory : MonoBehaviour
         }
         this.transform.GetChild(indexNum).GetChild(0).gameObject.SetActive(true);
     }
+
+    public void AddItemToSlots(Sprite itemSprite)
+    {
+        // Check if the active slot index is valid
+        if (activeSlotIndexNum >= 0 && activeSlotIndexNum < transform.childCount)
+        {
+            // Loop through all inventory slots
+            foreach (Transform inventorySlot in transform)
+            {
+                Image slotImage = inventorySlot.GetChild(1).GetComponent<Image>();
+
+                // Check if the slot is empty
+                if (slotImage.sprite == null)
+                {
+                    // Set the sprite of the slot image to the item sprite
+                    slotImage.sprite = itemSprite;
+
+                    // Enable the slot image
+                    slotImage.enabled = true;
+
+                    // Open the item after adding it to the slot
+                    inventorySlot.GetChild(1).gameObject.SetActive(true);
+
+                    // Debug message to indicate that the item has been added to the slot
+                    Debug.Log("Item added to slot successfully.");
+
+                    return; // Exit the function after adding the item to the first empty slot
+                }
+            }
+
+            Debug.LogWarning("No empty slot available.");
+        }
+        else
+        {
+            Debug.LogWarning("Active slot index is out of range.");
+        }
+    }
+
+
 }
