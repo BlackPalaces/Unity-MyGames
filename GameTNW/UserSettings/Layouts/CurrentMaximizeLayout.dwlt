@@ -217,8 +217,8 @@ MonoBehaviour:
     y: 0
     width: 223.2
     height: 506.4
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 7}
   m_Panes:
   - {fileID: 7}
@@ -261,9 +261,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1cf7feff
-      m_LastClickedID: 0
-      m_ExpandedIDs: cefaffffbe820000ca820000b0830000
+      m_SelectedIDs: 76ceffff
+      m_LastClickedID: -12682
+      m_ExpandedIDs: 9aceffffcefaffffbe820000ca820000b0830000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -710,9 +710,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 38.187332, y: -28.420494, z: -0.5851533}
+    m_Target: {x: 46.151302, y: -27.617168, z: -0.48706448}
     speed: 2
-    m_Value: {x: 38.187332, y: -28.420494, z: -0.5851533}
+    m_Value: {x: 46.151302, y: -27.617168, z: -0.48706448}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -762,9 +762,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 21.191717
+    m_Target: 12.851175
     speed: 2
-    m_Value: 21.191717
+    m_Value: 12.851175
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -994,8 +994,8 @@ MonoBehaviour:
     y: 506.4
     width: 1229.6
     height: 224.4
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 14}
@@ -1048,7 +1048,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprite/Bin/Materials
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1056,15 +1056,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprite/Bin/Materials
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: N:\UnityGameProject\Unity-MyGames\GameTNW
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 136.6}
-    m_SelectedIDs: da9f0000
-    m_LastClickedID: 40922
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: 1c950000
+    m_LastClickedID: 38172
     m_ExpandedIDs: 000000000e87000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1118,8 +1118,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 76ceffff
+    m_LastClickedInstanceID: -12682
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300008c7300005c61000096610000606c000014630000746b0000f66e000006720000ea870000aaa80000ec6900005a6b0000d26b0000fc7600005e6c00008e6c00008c6c0000a074000092830000ce7400000000000004a2000028a500006081000038930000c09300005a850000ee970000f4980000089900002ed50000fc9700008ae6000040860000
     m_RenameOverlay:
@@ -1145,7 +1145,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 50.600006}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 258
@@ -1185,7 +1185,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 33592
+  m_LastSelectedObjectID: -12682
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52

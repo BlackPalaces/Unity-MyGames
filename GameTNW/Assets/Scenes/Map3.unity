@@ -33173,7 +33173,7 @@ GameObject:
   - component: {fileID: 680315560}
   m_Layer: 0
   m_Name: OrangeBin
-  m_TagString: Untagged
+  m_TagString: InteractableTrashCan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34512,7 +34512,7 @@ GameObject:
   - component: {fileID: 937900627}
   m_Layer: 0
   m_Name: GreenBin
-  m_TagString: Untagged
+  m_TagString: InteractableTrashCan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37817,7 +37817,7 @@ GameObject:
   - component: {fileID: 1728763939}
   m_Layer: 0
   m_Name: BlueBin
-  m_TagString: Untagged
+  m_TagString: InteractableTrashCan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37831,8 +37831,8 @@ Transform:
   m_GameObject: {fileID: 1728763937}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.83, y: -29, z: 0.036765046}
-  m_LocalScale: {x: 0.5569008, y: 0.5569008, z: 0.5569008}
+  m_LocalPosition: {x: 45.0375, y: -28.9479, z: 0.036765046}
+  m_LocalScale: {x: 2.7252321, y: 2.7252321, z: 2.7252321}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 336934178}
@@ -37869,7 +37869,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.22473675, y: -1.3138363}
+  m_Offset: {x: 0.047300667, y: -0.25176996}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -37880,7 +37880,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3566976, y: 2.3540273}
+  m_Size: {x: 0.7383029, y: 0.4984491}
   m_EdgeRadius: 0
 --- !u!114 &1728763940
 MonoBehaviour:
@@ -38213,7 +38213,7 @@ GameObject:
   - component: {fileID: 1935287161}
   m_Layer: 0
   m_Name: RedBin
-  m_TagString: Untagged
+  m_TagString: InteractableTrashCan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
