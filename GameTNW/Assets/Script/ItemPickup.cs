@@ -1,12 +1,27 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class ItemPickup : MonoBehaviour
 {
     public GameObject itemCanvasPrefab;  // Reference to the itemCanvas Prefab
     private GameObject player;  // Reference to the Player
     public float interactDistance = 3f; // ระยะห่างสูงสุดที่เราสามารถแสดงปุ่ม
     private GameObject currentCanvas;  // Reference to the current itemCanvas
+    [SerializeField]
+    private string itemName;
+
+
+    public enum ItemType
+    {
+        Hazardous,
+        Recyclable,
+        Biodegradable,
+        General
+    }
+
+    [SerializeField]
+    private ItemType itemType;
+
 
     void Start()
     {
@@ -62,18 +77,44 @@ public class ItemPickup : MonoBehaviour
 
     void PickupItem()
     {
-        Debug.Log("Item Picked Up!");
-        // Add logic to pick up the item (e.g., add to inventory)
-        // Call AddItemToSlots function to add item to inventory slots
-        Sprite itemSprite = GetComponent<SpriteRenderer>().sprite; // Assuming the item has a SpriteRenderer component
-        FindObjectOfType<ActiveInventory>().AddItemToSlots(itemSprite);
-
-        // Destroy itemCanvas only if it exists
-        if (currentCanvas != null)
+        // Check if the active inventory has available slots
+        if (!IsInventoryFull())
         {
-            Destroy(currentCanvas);
+            Debug.Log("itemName is: " + itemName);
+            Debug.Log("itemType is: " + itemType);
+            Debug.Log("Item Picked Up! " + itemName + itemType);
+            // Add logic to pick up the item (e.g., add to inventory)
+            // Call AddItemToSlots function to add item to inventory slots
+            Sprite itemSprite = GetComponent<SpriteRenderer>().sprite; // Assuming the item has a SpriteRenderer component
+            string MyitemType = itemType.ToString();
+            Debug.Log("MyitemType is: " + MyitemType);
+            FindObjectOfType<ActiveInventory>().AddItemToSlots(itemSprite, itemName, MyitemType);
+
+            // Destroy itemCanvas only if it exists
+            if (currentCanvas != null)
+            {
+                Destroy(currentCanvas);
+            }
+            Destroy(gameObject);  // Destroy the item after picking up
         }
-        Destroy(gameObject);  // Destroy the item after picking up
     }
+
+    // Function to check if the inventory is full
+    bool IsInventoryFull()
+    {
+        // Get reference to the ActiveInventory component
+        ActiveInventory activeInventory = FindObjectOfType<ActiveInventory>();
+
+        // Check if there are available slots in the inventory
+        // Assuming ActiveInventory has a method to check if it's full
+        if (activeInventory != null && activeInventory.IsFull())
+        {
+            Debug.Log("Inventory is full!");
+            return true;
+        }
+
+        return false;
+    }
+
 
 }

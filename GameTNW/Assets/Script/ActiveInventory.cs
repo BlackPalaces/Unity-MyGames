@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class ActiveInventory : MonoBehaviour
 {
@@ -44,6 +45,16 @@ public class ActiveInventory : MonoBehaviour
         ToggleActiveHighlight(numValue - 1);
     }
 
+    private IEnumerator DeactivateNameAfterDelay(Transform slot, float delay)
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        // Deactivate the name
+        slot.GetChild(2).gameObject.SetActive(false);
+    }
+
+
     private void ToggleActiveHighlight(int indexNum)
     {
         activeSlotIndexNum = indexNum;
@@ -53,9 +64,33 @@ public class ActiveInventory : MonoBehaviour
             inventorySlot.GetChild(0).gameObject.SetActive(false);
         }
         this.transform.GetChild(indexNum).GetChild(0).gameObject.SetActive(true);
+
+        // Activate the name of the selected slot
+        Transform selectedSlot = this.transform.GetChild(indexNum);
+        selectedSlot.GetChild(2).gameObject.SetActive(true);
+
+        // Start coroutine to deactivate the name after a delay
+        StartCoroutine(DeactivateNameAfterDelay(selectedSlot, 1f));
     }
 
-    public void AddItemToSlots(Sprite itemSprite)
+    public bool IsFull()
+    {
+        foreach (Transform inventorySlot in transform)
+        {
+            Image slotImage = inventorySlot.GetChild(1).GetComponent<Image>();
+
+            // If there is any empty slot, return false
+            if (slotImage.sprite == null)
+            {
+                return false;
+            }
+        }
+
+        // If no empty slot is found, return true
+        return true;
+    }
+
+    public void AddItemToSlots(Sprite itemSprite , string itemName , string itemType)
     {
         // Check if the active slot index is valid
         if (activeSlotIndexNum >= 0 && activeSlotIndexNum < transform.childCount)
@@ -76,9 +111,15 @@ public class ActiveInventory : MonoBehaviour
 
                     // Open the item after adding it to the slot
                     inventorySlot.GetChild(1).gameObject.SetActive(true);
+                    TextMeshProUGUI itemNameText = inventorySlot.GetChild(2).GetComponent<TextMeshProUGUI>();
+                    itemNameText.text = itemName;
+                    itemNameText.enabled = true;
+                    TextMeshProUGUI itemNameType = inventorySlot.GetChild(3).GetComponent<TextMeshProUGUI>();
+                    itemNameType.text = itemType;
+                    itemNameType.enabled = true;
 
                     // Debug message to indicate that the item has been added to the slot
-                    Debug.Log("Item added to slot successfully.");
+                    Debug.Log("Item added to slot successfully: ");
 
                     return; // Exit the function after adding the item to the first empty slot
                 }
