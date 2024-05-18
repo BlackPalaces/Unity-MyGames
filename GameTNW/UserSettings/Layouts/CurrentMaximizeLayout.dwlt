@@ -91,7 +91,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -261,9 +261,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d2820000
-      m_LastClickedID: 33490
-      m_ExpandedIDs: cefaffffb2820000be820000
+      m_SelectedIDs: 1cf7feff
+      m_LastClickedID: 0
+      m_ExpandedIDs: cefaffffbe820000ca820000b0830000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -710,9 +710,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.0322607, y: -1.8772222, z: -0.17496362}
+    m_Target: {x: 38.187332, y: -28.420494, z: -0.5851533}
     speed: 2
-    m_Value: {x: -3.0322607, y: -1.8772222, z: -0.17496362}
+    m_Value: {x: 38.187332, y: -28.420494, z: -0.5851533}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -762,9 +762,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 54.121902
+    m_Target: 21.191717
     speed: 2
-    m_Value: 54.121902
+    m_Value: 21.191717
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -994,15 +994,15 @@ MonoBehaviour:
     y: 506.4
     width: 1229.6
     height: 224.4
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 14}
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1048,7 +1048,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/Sprite/Bin/Materials
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1056,15 +1056,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script
+  - Assets/Sprite/Bin/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: N:\UnityGameProject\Unity-MyGames\GameTNW
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: 1c950000
-    m_LastClickedID: 38172
+    scrollPos: {x: 0, y: 136.6}
+    m_SelectedIDs: da9f0000
+    m_LastClickedID: 40922
     m_ExpandedIDs: 000000000e87000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1118,10 +1118,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: d2820000
-    m_LastClickedInstanceID: 33490
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300008c7300005c61000096610000606c000014630000746b0000f66e000006720000ea870000aaa80000ec6900005a6b0000d26b0000fc7600005e6c00008e6c00008c6c0000a074000092830000ce7400000000000004a2000028a500006081000038930000c09300005a850000ee970000f4980000089900002ed50000fc9700008ae60000
+    m_ExpandedInstanceIDs: c62300008c7300005c61000096610000606c000014630000746b0000f66e000006720000ea870000aaa80000ec6900005a6b0000d26b0000fc7600005e6c00008e6c00008c6c0000a074000092830000ce7400000000000004a2000028a500006081000038930000c09300005a850000ee970000f4980000089900002ed50000fc9700008ae6000040860000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1145,7 +1145,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 50.600006}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 258
@@ -1185,7 +1185,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 33674
+  m_LastSelectedObjectID: 33592
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1239,8 +1239,8 @@ MonoBehaviour:
     y: 0
     width: 306.40002
     height: 730.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}

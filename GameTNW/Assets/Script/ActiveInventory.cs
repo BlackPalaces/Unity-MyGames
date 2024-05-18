@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using TMPro;
+using static TrashCan;
+using static ItemPickup;
+using System;
 
 public class ActiveInventory : MonoBehaviour
 {
@@ -133,5 +136,59 @@ public class ActiveInventory : MonoBehaviour
         }
     }
 
+
+    // Function to clear the currently active item
+
+    public void ClearActiveItemIfMatch(string trashType)
+    {
+        if (activeSlotIndexNum >= 0 && activeSlotIndexNum < transform.childCount)
+        {
+            Transform selectedSlot = transform.GetChild(activeSlotIndexNum);
+            Image slotImage = selectedSlot.GetChild(1).GetComponent<Image>();
+
+            if (slotImage.sprite != null)
+            {
+                TextMeshProUGUI itemType = selectedSlot.GetChild(3).GetComponent<TextMeshProUGUI>();
+                string itemTypeText = itemType.text;
+
+                if (string.Equals(itemTypeText, trashType.ToString(), StringComparison.OrdinalIgnoreCase))
+                {
+                    ClearSlot();
+                    Debug.Log("Item thrown into trash: " + itemTypeText);
+                }
+                else
+                {
+                    Debug.LogWarning("Item type does not match trash type.");
+                }
+            }
+            else
+            {
+                Debug.Log("äÁèÁÕäÍà·çÁã¹ slot");
+            }
+        }
+        else
+        {
+            Debug.Log("activeSlotIndexNum");
+        }
+    }
+
+
+    public void ClearSlot()
+    {
+        if (activeSlotIndexNum >= 0 && activeSlotIndexNum < transform.childCount)
+        {
+            Transform activeSlot = transform.GetChild(activeSlotIndexNum);
+            Image slotImage = activeSlot.GetChild(1).GetComponent<Image>();
+
+            if (slotImage.sprite != null)
+            {
+                slotImage.sprite = null;
+                slotImage.enabled = false;
+                activeSlot.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
+                activeSlot.GetChild(3).GetComponent<TextMeshProUGUI>().text = "";
+                Debug.Log("Active item removed from slot: " + activeSlotIndexNum);
+            }
+        }
+    }
 
 }
