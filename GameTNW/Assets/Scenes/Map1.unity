@@ -182,7 +182,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -753293267
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -807005643, guid: 893a501a15bc006498be0babd72585ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -417,7 +417,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1914484089
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3743,7 +3743,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -384215541
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.234375, y: 0.8125, z: 0}
@@ -4397,7 +4397,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -753293267
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 740663274, guid: efb42ff3bce17d14c9ad8cbf9316c848, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4440,10 +4440,10 @@ MonoBehaviour:
   moveSpeed: 10
   solidObjectsLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
 --- !u!95 &1588186499
 Animator:
   serializedVersion: 5
@@ -4602,7 +4602,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -384215541
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 2085323400, guid: dfba451b9afc92241bc386e8c53e15bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -41,18 +41,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 1669854289
-    locked: 0
-  - name: Foreground
-    uniqueID: 3467273003
-    locked: 0
-  - name: MapObject
-    uniqueID: 1654198861
-    locked: 0
-  - name: Player
-    uniqueID: 2784339233
-    locked: 0
-  - name: TallObject
-    uniqueID: 365267849
-    locked: 0
