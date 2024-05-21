@@ -8,11 +8,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
+  - Camera
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Npc
+  - Player
+  - OJ
+  - GrapObject
   - 
   - 
   - 
@@ -38,4 +40,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 2054547437
     locked: 0
