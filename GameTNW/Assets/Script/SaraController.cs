@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,11 +10,14 @@ public class SaraController : MonoBehaviour
     [SerializeField] private float runSpeedMultiplier = 2f;
 
     private SaraControls saracontrols;
+
     private Vector2 movement;
     private Rigidbody2D rb;
     private Animator myAnimator;
+
     private SpriteRenderer mySpriteRender;
     private bool isRunning;
+    private bool isMoving;
 
     private void Awake()
     {
@@ -36,12 +39,12 @@ public class SaraController : MonoBehaviour
     private void Update()
     {
         PlayerInput();
+        AdjustPlayerFacingDirection();
     }
 
     private void FixedUpdate()
     {
-        //AdjustPlayerFacingDirection();
-        Move();
+        MovePlayer();
     }
 
     private void AdjustPlayerFacingDirection()
@@ -58,16 +61,41 @@ public class SaraController : MonoBehaviour
 
     private void PlayerInput()
     {
-        movement =  saracontrols.Movement.Move.ReadValue<Vector2>();
-        myAnimator.SetFloat("moveX", movement.x);
-        myAnimator.SetFloat("moveY",movement.y);
-        myAnimator.SetFloat("Speed" , movement.sqrMagnitude);
+        movement = saracontrols.Movement.Move.ReadValue<Vector2>();
+
+        if (movement == Vector2.zero)
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+
+            if (movement.x != 0) movement.y = 0;
+        }
+
+        isMoving = movement != Vector2.zero;
+
+        if (movement != Vector2.zero)
+        {
+            myAnimator.SetFloat("moveX", movement.x);
+            myAnimator.SetFloat("moveY", movement.y);
+            myAnimator.SetFloat("Speed", movement.sqrMagnitude);
+        }
+        else
+        {
+            myAnimator.SetFloat("Speed", 0);
+        }
+
+        myAnimator.SetBool("isMoving", isMoving);
     }
 
-    private void Move()
+
+    private void MovePlayer()
     {
-        float currentSpeed = isRunning ? moveSpeed * runSpeedMultiplier : moveSpeed;
-        rb.MovePosition(rb.position + movement * (currentSpeed * Time.fixedDeltaTime));
+        if (movement != Vector2.zero)
+        {
+            float currentSpeed = isRunning ? moveSpeed * runSpeedMultiplier : moveSpeed;
+            Vector2 newPosition = rb.position + movement * (currentSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(newPosition);
+        }
     }
 
     private void StartRunning()
