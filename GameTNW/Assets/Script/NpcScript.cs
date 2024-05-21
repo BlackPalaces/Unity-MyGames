@@ -7,38 +7,62 @@ using UnityEngine.UI;
 public class NpcScript : MonoBehaviour
 {
     public GameObject dialogBox; // Dialog box ที่จะแสดงเมื่อกดปุ่ม E
-    public GameObject button; // ปุ่มที่จะแสดงเมื่อ NPC มีการชน
+    public GameObject itemCanvasPrefab;
+    private GameObject currentCanvas;// NPC มีการชน
     public float interactDistance = 2f; // ระยะห่างสูงสุดที่เราสามารถแสดงปุ่ม
     public TMP_Text dialogText; // Reference สำหรับ Text Component ที่ใช้แสดงข้อความ
     public Image dialogImage; // Reference สำหรับ Image Component ที่ใช้แสดงภาพ
     public TMP_Text characterNameText; // Reference สำหรับ Text Component ที่ใช้แสดงชื่อตัวละคร
     public bool allowRepeatedDialog = true;
-    private bool isPlayerInRange = false; // เช็คว่าผู้เล่นอยู่ในระยะหรือไม่
     private bool isDialogActive = false; // เช็คว่าการสนทนากำลังทำงานหรือไม่
     private int currentDialogIndex = 0; // ดัชนีของ dialog ปัจจุบัน
     public DialogContainer dialogContainer; // อ้างอิงถึง DialogContainer
+    private GameObject player;
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player");  // Find the player object
+    }
 
     private void Update()
     {
-        // ตรวจสอบระยะห่างระหว่าง NPC และผู้เล่น
-        float distance = Vector3.Distance(transform.position, GameObject.FindWithTag("Player").transform.position);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactDistance);
+        bool playerNearby = false;
 
-        // ถ้าระยะห่างน้อยกว่าหรือเท่ากับระยะที่กำหนด
-        if (distance <= interactDistance)
+        // Check if player is nearby
+        foreach (Collider2D collider in colliders)
         {
-            // แสดงปุ่ม
-            button.SetActive(true);
-            isPlayerInRange = true;
+            if (collider.CompareTag("Player"))
+            {
+                playerNearby = true;
+                break;
+            }
+        }
+
+        // Show/hide itemCanvas
+        if (playerNearby)
+        {
+            if (currentCanvas == null)
+            {
+                // Instantiate itemCanvasPrefab and set its position to the left of the item
+                currentCanvas = Instantiate(itemCanvasPrefab, transform.position + Vector3.left * 1f + Vector3.up * 2f, Quaternion.identity);
+            }
+            else if (!currentCanvas.activeSelf)
+            {
+                currentCanvas.SetActive(true);
+            }
         }
         else
         {
-            // ซ่อนปุ่ม
-            button.SetActive(false);
-            isPlayerInRange = false;
+            // Destroy currentCanvas if player is not nearby
+            if (currentCanvas != null)
+            {
+                Destroy(currentCanvas);
+                currentCanvas = null;
+            }
         }
 
         // ถ้าอยู่ในระยะและกดปุ่ม E และยังไม่ได้ทำการสนทนากับ NPC หรือเมื่อตั้งค่า allowRepeatedDialog เป็น true
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E) && (!isDialogActive || allowRepeatedDialog))
+        if (playerNearby && Input.GetKeyDown(KeyCode.E) && (!isDialogActive || allowRepeatedDialog))
         {
             if (dialogContainer != null && dialogContainer.dialogs != null && dialogContainer.dialogs.Count > 0)
             {
