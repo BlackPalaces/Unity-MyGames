@@ -14,7 +14,6 @@ public class NpcScript : MonoBehaviour
     public Image dialogImage; // Reference สำหรับ Image Component ที่ใช้แสดงภาพ
     public TMP_Text characterNameText; // Reference สำหรับ Text Component ที่ใช้แสดงชื่อตัวละคร
     public bool allowRepeatedDialog = true;
-    private bool isPlayerInRange = false; // เช็คว่าผู้เล่นอยู่ในระยะหรือไม่
     private bool isDialogActive = false; // เช็คว่าการสนทนากำลังทำงานหรือไม่
     private int currentDialogIndex = 0; // ดัชนีของ dialog ปัจจุบัน
     public DialogContainer dialogContainer; // อ้างอิงถึง DialogContainer
