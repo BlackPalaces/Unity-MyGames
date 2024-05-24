@@ -5,16 +5,34 @@ using UnityEngine;
 public class TypewriterEffect : MonoBehaviour
 {
     public float delay = 0.1f; // ความล่าช้าระหว่างการแสดงอักขระ
+    public float shakeAmount = 2f; // ความรุนแรงของการเขย่าตัวอักษร
     private TMP_Text textComponent; // คอมโพเนนต์ข้อความ TMP
     private string fullText; // ข้อความทั้งหมด
     private string currentText = ""; // ข้อความปัจจุบันที่ถูกแสดง
     private bool isTyping = false; // สถานะของการพิมพ์ข้อความ
 
-    void Start()
+    void Awake()
     {
         textComponent = GetComponent<TMP_Text>();
-        fullText = textComponent.text;
+    }
+
+    void Start()
+    {
+        StartCoroutine(ShakeTextContinuously());
+    }
+
+    public void StartTyping(string newText)
+    {
+        if (isTyping)
+        {
+            SkipTyping();
+        }
+
+        fullText = newText;
         textComponent.text = "";
+        currentText = "";
+        isTyping = true;
+
         StartCoroutine(ShowText());
     }
 
@@ -29,6 +47,43 @@ public class TypewriterEffect : MonoBehaviour
         isTyping = false;
     }
 
+    IEnumerator ShakeTextContinuously()
+    {
+        while (true)
+        {
+            ShakeText();
+            yield return null; // เขย่าในทุกๆ เฟรม
+        }
+    }
+
+    private void ShakeText()
+    {
+        textComponent.ForceMeshUpdate();
+        var textInfo = textComponent.textInfo;
+
+        for (int i = 0; i < textInfo.characterCount; i++)
+        {
+            if (!textInfo.characterInfo[i].isVisible)
+                continue;
+
+            var verts = textInfo.meshInfo[textInfo.characterInfo[i].materialReferenceIndex].vertices;
+
+            for (int j = 0; j < 4; j++)
+            {
+                var original = verts[textInfo.characterInfo[i].vertexIndex + j];
+                var offset = Random.insideUnitCircle * shakeAmount;
+                verts[textInfo.characterInfo[i].vertexIndex + j] = original + new Vector3(offset.x, offset.y, 0);
+            }
+        }
+
+        for (int i = 0; i < textInfo.meshInfo.Length; i++)
+        {
+            var meshInfo = textInfo.meshInfo[i];
+            meshInfo.mesh.vertices = meshInfo.vertices;
+            textComponent.UpdateGeometry(meshInfo.mesh, i);
+        }
+    }
+
     public void SkipTyping()
     {
         if (isTyping)
@@ -36,6 +91,12 @@ public class TypewriterEffect : MonoBehaviour
             StopAllCoroutines();
             textComponent.text = fullText;
             isTyping = false;
+            StartCoroutine(ShakeTextContinuously());
         }
+    }
+
+    public bool IsTyping()
+    {
+        return isTyping;
     }
 }
