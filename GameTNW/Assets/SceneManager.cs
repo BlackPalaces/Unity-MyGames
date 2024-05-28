@@ -9,4 +9,13 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Map3");
     }
+    public void LoadHome(string sceneName)
+    {
+        SceneManager.LoadScene("Home");
+    }
+
+    public void QuitApp()
+    {
+        Application.Quit();
+    }
 }

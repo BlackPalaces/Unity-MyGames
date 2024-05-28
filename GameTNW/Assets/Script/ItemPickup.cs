@@ -9,7 +9,7 @@ public class ItemPickup : MonoBehaviour
     private GameObject currentCanvas;  // Reference to the current itemCanvas
     [SerializeField]
     private string itemName;
-
+    public AudioClip itemPickupSound;
 
     public enum ItemType
     {
@@ -85,6 +85,14 @@ public class ItemPickup : MonoBehaviour
             Debug.Log("Item Picked Up! " + itemName + itemType);
             // Add logic to pick up the item (e.g., add to inventory)
             // Call AddItemToSlots function to add item to inventory slots
+            if (itemPickupSound != null)
+            {
+                AudioSource.PlayClipAtPoint(itemPickupSound, transform.position);
+            }
+            else
+            {
+                Debug.LogError("itemPickupSound is null.");
+            }
             Sprite itemSprite = GetComponent<SpriteRenderer>().sprite; // Assuming the item has a SpriteRenderer component
             string MyitemType = itemType.ToString();
             Debug.Log("MyitemType is: " + MyitemType);

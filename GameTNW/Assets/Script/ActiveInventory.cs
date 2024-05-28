@@ -12,6 +12,7 @@ public class ActiveInventory : MonoBehaviour
 {
     private int activeSlotIndexNum = 0;
     private SaraControls saraControls;
+    public DialogBob dialogBob; // เพิ่มตัวแปรสำหรับการอ้างอิงถึง DialogBob
 
     private void Awake()
     {
@@ -24,6 +25,10 @@ public class ActiveInventory : MonoBehaviour
         if (saraControls != null)
         {
             saraControls.Inventory.Keyboard.performed += ctx => ToggleActiveSlot((int)ctx.ReadValue<float>());
+        }
+        if (dialogBob == null)
+        {
+            dialogBob = FindObjectOfType<DialogBob>();
         }
     }
 
@@ -158,8 +163,15 @@ public class ActiveInventory : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogWarning("Item type does not match trash type.");
-                }
+                    if (dialogBob != null)
+                    {
+                        dialogBob.StartDialog();
+                    }
+                    else
+                    {
+                        Debug.LogWarning("DialogBob reference is not set.");
+                    }
+                 }
             }
             else
             {

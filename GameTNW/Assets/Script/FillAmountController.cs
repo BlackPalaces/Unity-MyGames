@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class FillAmountController : MonoBehaviour
 {
@@ -28,6 +29,15 @@ public class FillAmountController : MonoBehaviour
         StartCoroutine(CountdownAndFill(currentTime));
     }
 
+    void Update()
+    {
+        // ตรวจสอบค่า fillAmount ในทุกเฟรม
+        if (sunMaskImage.fillAmount >= 1f)
+        {
+            // ถ้าค่า fillAmount เท่ากับ 1 หรือมากกว่า ให้ย้ายไปยังฉาก Gameover
+            SceneManager.LoadScene("GameoverScene");
+        }
+    }
     IEnumerator CountdownAndFill(float currentTime)
     {
         while (currentTime <= countdownTime)
@@ -44,5 +54,9 @@ public class FillAmountController : MonoBehaviour
 
         // เมื่อเวลานับถอยหลังหมดลง กำหนด Fill Amount ให้เต็ม
         sunMaskImage.fillAmount = 1f;
+
     }
+
+
+
 }
