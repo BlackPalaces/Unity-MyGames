@@ -10,7 +10,7 @@ public class SaraController : MonoBehaviour
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float runSpeedMultiplier = 2f;
     [SerializeField] private AudioClip walkingSound;
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] public AudioSource audioSource;
 
     private SaraControls saracontrols;
 

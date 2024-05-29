@@ -164,6 +164,56 @@ public partial class @SaraControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Book"",
+            ""id"": ""d258fa70-c9f2-40d5-bd74-13600b91337a"",
+            ""actions"": [
+                {
+                    ""name"": ""OpenBook"",
+                    ""type"": ""Button"",
+                    ""id"": ""e47540fc-a0c2-415b-b858-10b89175303f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""f0aea95d-6cfc-43a7-9c89-d70a4dd70294"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenBook"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""23bc4022-1b3b-4793-a69f-3fecf18bb9ed"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenBook"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""52ba41e5-115f-48bb-8871-e244b306814a"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenBook"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -175,6 +225,9 @@ public partial class @SaraControls: IInputActionCollection2, IDisposable
         // Inventory
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
         m_Inventory_Keyboard = m_Inventory.FindAction("Keyboard", throwIfNotFound: true);
+        // Book
+        m_Book = asset.FindActionMap("Book", throwIfNotFound: true);
+        m_Book_OpenBook = m_Book.FindAction("OpenBook", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -332,6 +385,52 @@ public partial class @SaraControls: IInputActionCollection2, IDisposable
         }
     }
     public InventoryActions @Inventory => new InventoryActions(this);
+
+    // Book
+    private readonly InputActionMap m_Book;
+    private List<IBookActions> m_BookActionsCallbackInterfaces = new List<IBookActions>();
+    private readonly InputAction m_Book_OpenBook;
+    public struct BookActions
+    {
+        private @SaraControls m_Wrapper;
+        public BookActions(@SaraControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @OpenBook => m_Wrapper.m_Book_OpenBook;
+        public InputActionMap Get() { return m_Wrapper.m_Book; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(BookActions set) { return set.Get(); }
+        public void AddCallbacks(IBookActions instance)
+        {
+            if (instance == null || m_Wrapper.m_BookActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_BookActionsCallbackInterfaces.Add(instance);
+            @OpenBook.started += instance.OnOpenBook;
+            @OpenBook.performed += instance.OnOpenBook;
+            @OpenBook.canceled += instance.OnOpenBook;
+        }
+
+        private void UnregisterCallbacks(IBookActions instance)
+        {
+            @OpenBook.started -= instance.OnOpenBook;
+            @OpenBook.performed -= instance.OnOpenBook;
+            @OpenBook.canceled -= instance.OnOpenBook;
+        }
+
+        public void RemoveCallbacks(IBookActions instance)
+        {
+            if (m_Wrapper.m_BookActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IBookActions instance)
+        {
+            foreach (var item in m_Wrapper.m_BookActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_BookActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public BookActions @Book => new BookActions(this);
     public interface IMovementActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -340,5 +439,9 @@ public partial class @SaraControls: IInputActionCollection2, IDisposable
     public interface IInventoryActions
     {
         void OnKeyboard(InputAction.CallbackContext context);
+    }
+    public interface IBookActions
+    {
+        void OnOpenBook(InputAction.CallbackContext context);
     }
 }

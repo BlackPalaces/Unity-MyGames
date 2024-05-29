@@ -142,6 +142,56 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Book",
+            "id": "d258fa70-c9f2-40d5-bd74-13600b91337a",
+            "actions": [
+                {
+                    "name": "OpenBook",
+                    "type": "Button",
+                    "id": "e47540fc-a0c2-415b-b858-10b89175303f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f0aea95d-6cfc-43a7-9c89-d70a4dd70294",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenBook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "23bc4022-1b3b-4793-a69f-3fecf18bb9ed",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenBook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52ba41e5-115f-48bb-8871-e244b306814a",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenBook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
