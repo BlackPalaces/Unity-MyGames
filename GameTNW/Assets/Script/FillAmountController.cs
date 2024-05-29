@@ -39,7 +39,7 @@ public class FillAmountController : MonoBehaviour
             // เรียกฟังก์ชั่นหยุดเกมหรือส่งไปยังฉาก Game Over ตามที่คุณต้องการ
             if (currentSceneName == "Map3")
             {
-                SceneManager.LoadScene("Home");
+                SceneManager.LoadScene("GameOverScene");
             }
             else if (currentSceneName == "Map2")
             {
