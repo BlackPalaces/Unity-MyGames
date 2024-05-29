@@ -35,7 +35,21 @@ public class FillAmountController : MonoBehaviour
         if (sunMaskImage.fillAmount >= 1f)
         {
             // ถ้าค่า fillAmount เท่ากับ 1 หรือมากกว่า ให้ย้ายไปยังฉาก Gameover
-            SceneManager.LoadScene("GameoverScene");
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            // เรียกฟังก์ชั่นหยุดเกมหรือส่งไปยังฉาก Game Over ตามที่คุณต้องการ
+            if (currentSceneName == "Map3")
+            {
+                SceneManager.LoadScene("Home");
+            }
+            else if (currentSceneName == "Map2")
+            {
+                SceneManager.LoadScene("Home");
+            }
+            else
+            {
+                // เผื่อว่ามีฉากอื่น ๆ ที่ต้องการไปฉาก Game Over เดียวกัน
+                SceneManager.LoadScene("Home");
+            }
         }
     }
     IEnumerator CountdownAndFill(float currentTime)

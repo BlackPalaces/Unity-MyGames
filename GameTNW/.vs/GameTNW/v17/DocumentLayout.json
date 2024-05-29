@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\assets\\script\\activeinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\assets\\script\\fillamountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fillamountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|n:\\unitygameproject\\unity-mygames\\gametnw\\assets\\script\\activeinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\activeinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|n:\\unitygameproject\\unity-mygames\\gametnw\\assets\\script\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\assets\\script\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\assets\\script\\bookinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\bookinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\assets\\script\\fillamountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fillamountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,11 +94,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BookInventory.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\BookInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\BookInventory.cs",
@@ -122,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ErrorTypeText.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\ErrorTypeText.cs",
               "RelativeDocumentMoniker": "Assets\\ErrorTypeText.cs",
@@ -146,15 +146,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "FillAmountController.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\FillAmountController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\FillAmountController.cs",
               "ToolTip": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\FillAmountController.cs",
               "RelativeToolTip": "Assets\\Script\\FillAmountController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwCUAAAAKAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAqwCsAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T16:12:41.085Z"
+              "WhenOpened": "2024-05-28T16:12:41.085Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -170,13 +171,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ActiveInventory.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\ActiveInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ActiveInventory.cs",
               "ToolTip": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\ActiveInventory.cs",
               "RelativeToolTip": "Assets\\Script\\ActiveInventory.cs",
-              "ViewState": "AQIAAPkAAAAAAAAAAAAuwNAAAAARAAAA",
+              "ViewState": "AQIAAM8AAAAAAAAAAAA8wOIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T16:21:17.312Z",
               "EditorCaption": ""
@@ -195,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "NpcScript.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcScript.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\NpcScript.cs",
@@ -207,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NpcDialog.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcDialog.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\NpcDialog.cs",
@@ -267,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ItemPickup.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\ItemPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ItemPickup.cs",
@@ -275,8 +276,7 @@
               "RelativeToolTip": "Assets\\Script\\ItemPickup.cs",
               "ViewState": "AQIAAGgAAAAAAAAAAAAgwFoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T05:33:06.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T05:33:06.151Z"
             },
             {
               "$type": "Document",
@@ -292,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Book.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\Book.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Book.cs",
@@ -304,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SaraController.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\SaraController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\SaraController.cs",

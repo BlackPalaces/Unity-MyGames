@@ -10,6 +10,7 @@ using System;
 using static UnityEditor.Progress;
 using UnityEngine.SceneManagement;
 
+
 public class ActiveInventory : MonoBehaviour
 {
     private int activeSlotIndexNum = 0;
@@ -215,8 +216,21 @@ public class ActiveInventory : MonoBehaviour
         WrongCountText.text = Wrongnum.ToString();
         if (Wrongnum <= 0)
         {
+            string currentSceneName = SceneManager.GetActiveScene().name;
             // เรียกฟังก์ชั่นหยุดเกมหรือส่งไปยังฉาก Game Over ตามที่คุณต้องการ
-            SceneManager.LoadScene("GameoverScene");
+            if (currentSceneName == "Map3")
+            {
+                SceneManager.LoadScene("GameOverScene");
+            }
+            else if (currentSceneName == "Map2")
+            {
+                SceneManager.LoadScene("Home");
+            }
+            else
+            {
+                // เผื่อว่ามีฉากอื่น ๆ ที่ต้องการไปฉาก Game Over เดียวกัน
+                SceneManager.LoadScene("Home");
+            }
         }
     }
 
