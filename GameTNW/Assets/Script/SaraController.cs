@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class SaraController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float runSpeedMultiplier = 2f;
+    [SerializeField] private AudioClip walkingSound;
+    [SerializeField] private AudioSource audioSource;
 
     private SaraControls saracontrols;
 
@@ -26,7 +29,6 @@ public class SaraController : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         mySpriteRender = GetComponent<SpriteRenderer>();
 
-
         saracontrols.Movement.Run.performed += ctx => StartRunning();
         saracontrols.Movement.Run.canceled += ctx => StopRunning();
     }
@@ -36,10 +38,16 @@ public class SaraController : MonoBehaviour
         saracontrols.Enable();
     }
 
+    private void OnDisable()
+    {
+        saracontrols.Disable();
+    }
+
     private void Update()
     {
         PlayerInput();
         AdjustPlayerFacingDirection();
+        HandleWalkingSound();
     }
 
     private void FixedUpdate()
@@ -87,7 +95,6 @@ public class SaraController : MonoBehaviour
         myAnimator.SetBool("isMoving", isMoving);
     }
 
-
     private void MovePlayer()
     {
         if (movement != Vector2.zero)
@@ -108,5 +115,31 @@ public class SaraController : MonoBehaviour
         isRunning = false;
     }
 
-
+    private void HandleWalkingSound()
+    {
+        if (isMoving && !audioSource.isPlaying)
+        {
+            audioSource.clip = walkingSound;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+        else if (!isMoving && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
+     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "NextMap")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else if(collision.tag == "PreviousMap")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+    }
 }
+   
+
+

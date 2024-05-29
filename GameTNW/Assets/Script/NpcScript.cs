@@ -18,9 +18,12 @@ public class NpcScript : MonoBehaviour
     private int currentDialogIndex = 0; // ดัชนีของ dialog ปัจจุบัน
     public DialogContainer dialogContainer; // อ้างอิงถึง DialogContainer
     private GameObject player;
+    private TypewriterEffect typewriterEffect; // Reference to TypewriterEffect
+
     void Start()
     {
         player = GameObject.FindWithTag("Player");  // Find the player object
+        typewriterEffect = dialogText.GetComponent<TypewriterEffect>(); // Get TypewriterEffect component from dialogText
     }
 
     private void Update()
@@ -110,13 +113,12 @@ public class NpcScript : MonoBehaviour
         }
     }
 
-
     private void ShowDialog(int index)
     {
         if (dialogContainer != null && dialogContainer.dialogs != null && index >= 0 && index < dialogContainer.dialogs.Count)
         {
             NpcDialog currentDialog = dialogContainer.dialogs[index];
-            dialogText.text = currentDialog.dialogText;
+            typewriterEffect.StartTyping(currentDialog.dialogText);
             dialogImage.sprite = currentDialog.characterSprite;
             characterNameText.text = currentDialog.characterName;
 
@@ -133,10 +135,7 @@ public class NpcScript : MonoBehaviour
                 npcAudioSource.Play(); // เล่นเสียง
             }
 
-
-
-            /* StartCoroutine(ShowNextDialogAfterDelay(currentDialog.skipDelay));*/
-            float delay = currentDialog.dialogAudio.length + currentDialog.skipDelay;
+            float delay = currentDialog.dialogAudio != null ? currentDialog.dialogAudio.length + currentDialog.skipDelay : currentDialog.skipDelay;
             StartCoroutine(ShowNextDialogAfterDelay(delay));
         }
         else
@@ -145,16 +144,12 @@ public class NpcScript : MonoBehaviour
         }
     }
 
-
-
-
     // ฟังก์ชันสำหรับเรียกใช้ ShowNextDialog() หลังจากเวลาที่กำหนด
     private IEnumerator ShowNextDialogAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         ShowNextDialog();
     }
-
 
     private void EndDialog()
     {

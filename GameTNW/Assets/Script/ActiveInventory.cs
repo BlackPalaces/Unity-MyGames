@@ -7,12 +7,24 @@ using TMPro;
 using static TrashCan;
 using static ItemPickup;
 using System;
+using static UnityEditor.Progress;
+using UnityEngine.SceneManagement;
 
 public class ActiveInventory : MonoBehaviour
 {
     private int activeSlotIndexNum = 0;
     private SaraControls saraControls;
+    public DialogBob dialogBob; // เพิ่มตัวแปรสำหรับการอ้างอิงถึง DialogBob
 
+    public AudioClip throwSound;
+    public AudioClip wrongNumSound;
+    private AudioSource audioSource;
+    public GameObject numofitems;
+    public TextMeshProUGUI numofTrashText;  // ช่องแสดงจำนวนขยะที่ทิ้งไปแล้ว/ขยะในแมพทั้งหมด เช่น 2/15
+    public TextMeshProUGUI WrongCountText;  // ช่องสำหรับแสดงจำนวนที่สามารถผิดได้   เช่น 3 ถ้าทิ้งขยะไม่ตรงประเภทก็จะลดเหลือ 2
+    public int Wrongnum = 3;  //จำนวนที่สามารถทิ้งผิดได้ ค่าเริ่มต้นคือ 3 แต่สามารถเปลี่ยนได้
+    private int numClean = 0;
+    private int totalTrashCount;
     private void Awake()
     {
         saraControls = new SaraControls();
@@ -21,9 +33,16 @@ public class ActiveInventory : MonoBehaviour
 
     private void Start()
     {
+        totalTrashCount = numofitems.transform.childCount;
+        UpdateTrashText();
+        audioSource = GetComponent<AudioSource>();
         if (saraControls != null)
         {
             saraControls.Inventory.Keyboard.performed += ctx => ToggleActiveSlot((int)ctx.ReadValue<float>());
+        }
+        if (dialogBob == null)
+        {
+            dialogBob = FindObjectOfType<DialogBob>();
         }
     }
 
@@ -154,12 +173,25 @@ public class ActiveInventory : MonoBehaviour
                 if (string.Equals(itemTypeText, trashType.ToString(), StringComparison.OrdinalIgnoreCase))
                 {
                     ClearSlot();
+                    PlayThrowSound();
+                    numClean++;
+                    UpdateTrashText();
                     Debug.Log("Item thrown into trash: " + itemTypeText);
                 }
                 else
                 {
-                    Debug.LogWarning("Item type does not match trash type.");
-                }
+                    // ลดจำนวน Wrongnum ลง และ ถ้า Wrongnum น้อยกว่า หรือเท่ากับ 0 ให้ ย้ายไปscene gameover
+                    DecrementWrongCount();
+                    PlayWrongNumSound();
+                    if (dialogBob != null)
+                    {
+                        dialogBob.StartDialog();
+                    }
+                    else
+                    {
+                        Debug.LogWarning("DialogBob reference is not set.");
+                    }
+                 }
             }
             else
             {
@@ -172,6 +204,21 @@ public class ActiveInventory : MonoBehaviour
         }
     }
 
+    private void UpdateTrashText()
+    {
+        numofTrashText.text = numClean + " / " + totalTrashCount.ToString();
+    }
+
+    private void DecrementWrongCount()
+    {
+        Wrongnum--;
+        WrongCountText.text = Wrongnum.ToString();
+        if (Wrongnum <= 0)
+        {
+            // เรียกฟังก์ชั่นหยุดเกมหรือส่งไปยังฉาก Game Over ตามที่คุณต้องการ
+            SceneManager.LoadScene("GameoverScene");
+        }
+    }
 
     public void ClearSlot()
     {
@@ -188,6 +235,26 @@ public class ActiveInventory : MonoBehaviour
                 activeSlot.GetChild(3).GetComponent<TextMeshProUGUI>().text = "";
                 Debug.Log("Active item removed from slot: " + activeSlotIndexNum);
             }
+        }
+    }
+
+    // เพิ่มเสียงเอฟเฟคเมื่อทิ้งขยะ
+    public void PlayThrowSound()
+    {
+        if (throwSound != null && audioSource != null)
+        {
+            audioSource.clip = throwSound;
+            audioSource.Play();
+        }
+    }
+
+    // เพิ่มเสียงเอฟเฟคเมื่อ Wrongnum ลดลง
+    public void PlayWrongNumSound()
+    {
+        if (wrongNumSound != null && audioSource != null)
+        {
+            audioSource.clip = wrongNumSound;
+            audioSource.Play();
         }
     }
 
