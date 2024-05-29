@@ -95698,34 +95698,31 @@ MonoBehaviour:
     skipDelay: 1
   - characterName: GamePad
     characterSprite: {fileID: 21300000, guid: 517fd346984ed564c85f562dc137eb13, type: 3}
-    dialogText: "\u0E08\u0E30\u0E44\u0E21\u0E48\u0E1E\u0E39\u0E14\u0E2D\u0E30\u0E44\u0E23\u0E2B\u0E19\u0E48\u0E2D\u0E22\u0E2B\u0E23\u0E2D"
+    dialogText: ...
     dialogAudio: {fileID: 8300000, guid: ef31ef0eded5211458691d186e73ffc3, type: 3}
     audioVolume: 1
     skipDelay: 0
   - characterName: GamePad
     characterSprite: {fileID: 21300000, guid: 6219bc13cd866b04083506dc2e101c48, type: 3}
-    dialogText: "\u0E41\u0E22\u0E48\u0E08\u0E31\u0E07"
+    dialogText: ...
     dialogAudio: {fileID: 8300000, guid: f0d16635da8f53248ababc56d7b802cd, type: 3}
     audioVolume: 1
     skipDelay: 0
   - characterName: GamePad
     characterSprite: {fileID: 21300000, guid: 9b001d2175fd4514bbec4c73d9eb1310, type: 3}
-    dialogText: "\u0E2D\u0E22\u0E48\u0E32\u0E43\u0E2B\u0E49\u0E40\u0E02\u0E32\u0E23\u0E39\u0E49\u0E40\u0E14\u0E47\u0E14\u0E02\u0E32\u0E14\u0E27\u0E48\u0E32\u0E40\u0E18\u0E2D\u0E40\u0E08\u0E2D\u0E09\u0E31\u0E19
-      \u0E40\u0E2D\u0E32\u0E19\u0E35\u0E49\u0E44\u0E1B \u0E41\u0E25\u0E49\u0E27\u0E17\u0E33\u0E15\u0E32\u0E21\u0E17\u0E35\u0E48\u0E40\u0E02\u0E32\u0E1A\u0E2D\u0E01\u0E0B\u0E30"
+    dialogText: ...
     dialogAudio: {fileID: 8300000, guid: f0d16635da8f53248ababc56d7b802cd, type: 3}
     audioVolume: 1
     skipDelay: 1
   - characterName: Bob
     characterSprite: {fileID: 21300000, guid: 990c1ff6e73a9584a9981d83394ad6b7, type: 3}
-    dialogText: "\u0E19\u0E35\u0E48!! \u0E21\u0E31\u0E27\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E2D\u0E22\u0E39\u0E48
-      \u0E23\u0E35\u0E1A\u0E46\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08"
+    dialogText: ...
     dialogAudio: {fileID: 8300000, guid: 71a619ee9d76e99458620e0c52d7a3cf, type: 3}
     audioVolume: 1
     skipDelay: 3
   - characterName: Bob
     characterSprite: {fileID: 21300000, guid: 990c1ff6e73a9584a9981d83394ad6b7, type: 3}
-    dialogText: "\u0E02\u0E2D\u0E42\u0E17\u0E29\u0E17 \u0E35\u0E09\u0E31\u0E19\u0E25\u0E37\u0E21\u0E44\u0E1B
-      \u0E40\u0E18\u0E2D\u0E2D\u0E32\u0E08\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E2A\u0E34\u0E48\u0E07\u0E19\u0E35\u0E49"
+    dialogText: ...
     dialogAudio: {fileID: 8300000, guid: 71a619ee9d76e99458620e0c52d7a3cf, type: 3}
     audioVolume: 1
     skipDelay: 3
