@@ -56,9 +56,9 @@ TagManager:
   - name: MapObject
     uniqueID: 1654198861
     locked: 0
-  - name: TallObject
-    uniqueID: 365267849
-    locked: 0
   - name: Player
     uniqueID: 2784339233
+    locked: 0
+  - name: TallObject
+    uniqueID: 365267849
     locked: 0

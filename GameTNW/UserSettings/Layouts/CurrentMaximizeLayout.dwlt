@@ -92,7 +92,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -193,8 +193,8 @@ MonoBehaviour:
     y: 0
     width: 230.4
     height: 472.8
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -239,7 +239,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7499ffffb6deffff0ee8ffffb8f9ffffa4940000d69400001eb80000
+      m_ExpandedIDs: 86f9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -282,8 +282,8 @@ MonoBehaviour:
     y: 0
     width: 533.6
     height: 472.8
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -686,9 +686,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -11.938098, y: 13.808584, z: -0.04642398}
+    m_Target: {x: 15.275826, y: 11.286366, z: 0.3247409}
     speed: 2
-    m_Value: {x: -11.938098, y: 13.808584, z: -0.04642398}
+    m_Value: {x: 15.275826, y: 11.286366, z: 0.3247409}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -738,9 +738,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.778185
+    m_Target: 37.621605
     speed: 2
-    m_Value: 5.778185
+    m_Value: 37.621605
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1012,8 +1012,8 @@ MonoBehaviour:
     y: 0
     width: 531.19995
     height: 472.8
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sound/SoundPickedup
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1100,16 +1100,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sound/SoundPickedup
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: N:\UnityGameProject\Unity-MyGames\GameTNW
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 327}
-    m_SelectedIDs: ceba0000
-    m_LastClickedID: 47822
-    m_ExpandedIDs: 00000000c6970000c8970000ca970000cc970000c2af0000d0ba000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 50b80000
+    m_LastClickedID: 47184
+    m_ExpandedIDs: 0000000018a400001aa400001ca400001ea4000020a4000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1137,7 +1137,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c6970000c8970000ca970000cc970000d0ba000000ca9a3b
+    m_ExpandedIDs: 0000000018a400001aa400001ca400001ea4000020a4000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1164,7 +1164,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008c7300005c61000096610000606c000014630000746b0000f66e000006720000ea870000aaa80000ec6900005a6b0000d26b0000fc7600005e6c00008e6c00008c6c0000a074000092830000ce74000004a2000028a500006081000038930000c09300005a850000ee970000f4980000089900002ed50000fc9700008ae60000408600007ccc00001c8d00006891000000000000aa9e00001600010048950000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1283,8 +1283,8 @@ MonoBehaviour:
     y: 0
     width: 240.80005
     height: 730.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
