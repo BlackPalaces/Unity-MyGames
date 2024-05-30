@@ -11,6 +11,11 @@ public class BookInventory : MonoBehaviour
     private int currentPage = 0;
     public SaraController playerController; // เพิ่มตัวแปรสำหรับอ้างอิงไปยังสคริปต์ SaraController
 
+    public AudioClip openBookSound;
+    public AudioClip closeBookSound;
+    public AudioClip pageFlipSound;
+    private AudioSource audioSource;
+
     void Start()
     {
         // เริ่มต้นปิด UI ของหนังสือ
@@ -26,6 +31,9 @@ public class BookInventory : MonoBehaviour
         {
             playerController = FindObjectOfType<SaraController>();
         }
+
+        // Initialize the AudioSource component
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -66,6 +74,11 @@ public class BookInventory : MonoBehaviour
                     playerController.audioSource.Stop();
                 }
             }
+            // Play the open book sound effect
+            if (audioSource != null && openBookSound != null)
+            {
+                audioSource.PlayOneShot(openBookSound);
+            }
             Debug.Log("Book opened");
         }
         else
@@ -74,6 +87,11 @@ public class BookInventory : MonoBehaviour
             if (playerController != null)
             {
                 playerController.enabled = true;
+            }
+            // Play the close book sound effect
+            if (audioSource != null && closeBookSound != null)
+            {
+                audioSource.PlayOneShot(closeBookSound);
             }
             Debug.Log("Book closed");
         }
@@ -86,6 +104,11 @@ public class BookInventory : MonoBehaviour
             pages[currentPage].SetActive(false);
             currentPage++;
             pages[currentPage].SetActive(true);
+            // Play the page flip sound effect
+            if (audioSource != null && pageFlipSound != null)
+            {
+                audioSource.PlayOneShot(pageFlipSound);
+            }
             Debug.Log("Next Page: " + currentPage);
         }
     }
@@ -97,6 +120,11 @@ public class BookInventory : MonoBehaviour
             pages[currentPage].SetActive(false);
             currentPage--;
             pages[currentPage].SetActive(true);
+            // Play the page flip sound effect
+            if (audioSource != null && pageFlipSound != null)
+            {
+                audioSource.PlayOneShot(pageFlipSound);
+            }
             Debug.Log("Previous Page: " + currentPage);
         }
     }

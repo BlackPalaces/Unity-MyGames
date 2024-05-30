@@ -19,6 +19,7 @@ public class ActiveInventory : MonoBehaviour
 
     public AudioClip throwSound;
     public AudioClip wrongNumSound;
+    public AudioClip Slotsound;
     private AudioSource audioSource;
     public GameObject numofitems;
     public TextMeshProUGUI numofTrashText;  // ช่องแสดงจำนวนขยะที่ทิ้งไปแล้ว/ขยะในแมพทั้งหมด เช่น 2/15
@@ -88,6 +89,7 @@ public class ActiveInventory : MonoBehaviour
         }
         this.transform.GetChild(indexNum).GetChild(0).gameObject.SetActive(true);
 
+        PlaySlotSound();
         // Activate the name of the selected slot
         Transform selectedSlot = this.transform.GetChild(indexNum);
         selectedSlot.GetChild(2).gameObject.SetActive(true);
@@ -268,6 +270,15 @@ public class ActiveInventory : MonoBehaviour
         if (wrongNumSound != null && audioSource != null)
         {
             audioSource.clip = wrongNumSound;
+            audioSource.Play();
+        }
+    }
+
+    public void PlaySlotSound()
+    {
+        if (Slotsound != null && audioSource != null)
+        {
+            audioSource.clip = Slotsound;
             audioSource.Play();
         }
     }

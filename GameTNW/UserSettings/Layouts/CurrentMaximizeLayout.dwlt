@@ -236,10 +236,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2e250000
-      m_LastClickedID: 0
-      m_ExpandedIDs: b8f9ffff
+      scrollPos: {x: 0, y: 1.2000122}
+      m_SelectedIDs: e2a10000
+      m_LastClickedID: 41442
+      m_ExpandedIDs: b8f9ffff7c9f0000e8a40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -686,9 +686,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 914.5349, y: 530.0568, z: -5.8236165}
+    m_Target: {x: 900.02985, y: 680.2733, z: -4.301758}
     speed: 2
-    m_Value: {x: 914.5349, y: 530.0568, z: -5.8236165}
+    m_Value: {x: 900.02985, y: 680.2733, z: -4.301758}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -738,9 +738,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1042.0052
+    m_Target: 883.9442
     speed: 2
-    m_Value: 1042.0052
+    m_Value: 883.9442
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/Sound/SoundPickedup
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1100,15 +1100,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script
+  - Assets/Sound/SoundPickedup
   m_LastFoldersGridSize: -1
   m_LastProjectPath: N:\UnityGameProject\Unity-MyGames\GameTNW
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 279}
-    m_SelectedIDs: 66cb0000
-    m_LastClickedID: 52070
+    scrollPos: {x: 0, y: 375}
+    m_SelectedIDs: f0c90000
+    m_LastClickedID: 51696
     m_ExpandedIDs: 00000000daad0000dcad0000dead0000e0ad0000e2ad0000e4ad0000e6ad0000b0c9000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1162,8 +1162,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 2e250000
-    m_LastClickedInstanceID: 9518
+    m_SelectedInstanceIDs: e2a10000
+    m_LastClickedInstanceID: 41442
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008c7300005c61000096610000606c000014630000746b0000f66e000006720000ea870000aaa80000ec6900005a6b0000d26b0000fc7600005e6c00008e6c00008c6c0000a074000092830000ce74000004a2000028a500006081000038930000c09300005a850000ee970000f4980000089900002ed50000fc9700008ae60000408600007ccc00001c8d000068910000aa9e0000160001004895000000000000
     m_RenameOverlay:
@@ -1229,7 +1229,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 38996
+  m_LastSelectedObjectID: 41442
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
