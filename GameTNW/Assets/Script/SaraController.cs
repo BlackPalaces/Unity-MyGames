@@ -10,6 +10,7 @@ public class SaraController : MonoBehaviour
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float runSpeedMultiplier = 2f;
     [SerializeField] private AudioClip walkingSound;
+    [SerializeField] private AudioClip runningSound;
     [SerializeField] public AudioSource audioSource;
 
     private SaraControls saracontrols;
@@ -120,6 +121,13 @@ public class SaraController : MonoBehaviour
         if (isMoving && !audioSource.isPlaying)
         {
             audioSource.clip = walkingSound;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+        else if (isRunning &&!audioSource.isPlaying)
+        {
+            isMoving = false;
+            audioSource.clip = runningSound;
             audioSource.loop = true;
             audioSource.Play();
         }

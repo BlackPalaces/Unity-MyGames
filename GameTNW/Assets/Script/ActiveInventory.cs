@@ -16,7 +16,7 @@ public class ActiveInventory : MonoBehaviour
     private int activeSlotIndexNum = 0;
     private SaraControls saraControls;
     public DialogBob dialogBob; // เพิ่มตัวแปรสำหรับการอ้างอิงถึง DialogBob
-
+    
     public AudioClip throwSound;
     public AudioClip wrongNumSound;
     private AudioSource audioSource;
@@ -26,6 +26,9 @@ public class ActiveInventory : MonoBehaviour
     public int Wrongnum = 3;  //จำนวนที่สามารถทิ้งผิดได้ ค่าเริ่มต้นคือ 3 แต่สามารถเปลี่ยนได้
     private int numClean = 0;
     private int totalTrashCount;
+    private bool portal;
+    public GameObject portalon;
+    public GameObject portalOff;
     private void Awake()
     {
         saraControls = new SaraControls();
@@ -208,6 +211,15 @@ public class ActiveInventory : MonoBehaviour
     private void UpdateTrashText()
     {
         numofTrashText.text = numClean + " / " + totalTrashCount.ToString();
+        if (numClean == totalTrashCount)
+        {
+            portalon.SetActive(true);
+            portalOff.SetActive(false) ;
+        }else
+        {
+            portalon.SetActive(false);
+            portalOff.SetActive(true);
+        }
     }
 
     private void DecrementWrongCount()
@@ -271,5 +283,6 @@ public class ActiveInventory : MonoBehaviour
             audioSource.Play();
         }
     }
+
 
 }
