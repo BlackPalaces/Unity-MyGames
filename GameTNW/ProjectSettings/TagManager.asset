@@ -7,6 +7,9 @@ TagManager:
   - InteractableTrashCan
   - NextMap
   - PreviousMap
+  - DropZone
+  - HomeButton
+  - ExitButton
   layers:
   - Default
   - TransparentFX
