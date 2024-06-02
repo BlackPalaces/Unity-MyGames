@@ -10,15 +10,30 @@ public class TypewriterEffect : MonoBehaviour
     private string fullText; // ข้อความทั้งหมด
     private string currentText = ""; // ข้อความปัจจุบันที่ถูกแสดง
     private bool isTyping = false; // สถานะของการพิมพ์ข้อความ
+    private Coroutine shakeCoroutine;
 
     void Awake()
     {
         textComponent = GetComponent<TMP_Text>();
     }
 
-    void Start()
+    void OnEnable()
     {
-        StartCoroutine(ShakeTextContinuously());
+        // เริ่มเขย่าข้อความเมื่อ GameObject ถูกเปิดใช้งาน
+        if (shakeCoroutine == null)
+        {
+            shakeCoroutine = StartCoroutine(ShakeTextContinuously());
+        }
+    }
+
+    void OnDisable()
+    {
+        // หยุดเขย่าข้อความเมื่อ GameObject ถูกปิดใช้งาน
+        if (shakeCoroutine != null)
+        {
+            StopCoroutine(shakeCoroutine);
+            shakeCoroutine = null;
+        }
     }
 
     public void StartTyping(string newText)
@@ -91,7 +106,7 @@ public class TypewriterEffect : MonoBehaviour
             StopAllCoroutines();
             textComponent.text = fullText;
             isTyping = false;
-            StartCoroutine(ShakeTextContinuously());
+            shakeCoroutine = StartCoroutine(ShakeTextContinuously());
         }
     }
 
