@@ -15,18 +15,21 @@ public class ActiveInventory : MonoBehaviour
 {
     private int activeSlotIndexNum = 0;
     private SaraControls saraControls;
-    public DialogBob dialogBob; // เพิ่มตัวแปรสำหรับการอ้างอิงถึง DialogBob
-
+    public DialogBob dialogBob; // ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝับ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝาง๏ฟฝิง๏ฟฝึง DialogBob
+    
     public AudioClip throwSound;
     public AudioClip wrongNumSound;
     public AudioClip Slotsound;
     private AudioSource audioSource;
     public GameObject numofitems;
-    public TextMeshProUGUI numofTrashText;  // ช่องแสดงจำนวนขยะที่ทิ้งไปแล้ว/ขยะในแมพทั้งหมด เช่น 2/15
-    public TextMeshProUGUI WrongCountText;  // ช่องสำหรับแสดงจำนวนที่สามารถผิดได้   เช่น 3 ถ้าทิ้งขยะไม่ตรงประเภทก็จะลดเหลือ 2
-    public int Wrongnum = 3;  //จำนวนที่สามารถทิ้งผิดได้ ค่าเริ่มต้นคือ 3 แต่สามารถเปลี่ยนได้
+    public TextMeshProUGUI numofTrashText;  // ๏ฟฝ๏ฟฝอง๏ฟฝสด๏ฟฝ๏ฟฝำนวน๏ฟฝ๏ฟฝะท๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ/๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ ๏ฟฝ๏ฟฝ 2/15
+    public TextMeshProUGUI WrongCountText;  // ๏ฟฝ๏ฟฝอง๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝับ๏ฟฝสด๏ฟฝ๏ฟฝำนวน๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝรถ๏ฟฝิด๏ฟฝ๏ฟฝ   ๏ฟฝ๏ฟฝ 3 ๏ฟฝ๏ฟฝาท๏ฟฝ้งข๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝรง๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝลด๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ 2
+    public int Wrongnum = 3;  //๏ฟฝำนวน๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝรถ๏ฟฝ๏ฟฝ้งผิด๏ฟฝ๏ฟฝ ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ้นค๏ฟฝ๏ฟฝ 3 ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝรถ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝยน๏ฟฝ๏ฟฝ
     private int numClean = 0;
     private int totalTrashCount;
+    private bool portal;
+    public GameObject portalon;
+    public GameObject portalOff;
     private void Awake()
     {
         saraControls = new SaraControls();
@@ -183,7 +186,7 @@ public class ActiveInventory : MonoBehaviour
                 }
                 else
                 {
-                    // ลดจำนวน Wrongnum ลง และ ถ้า Wrongnum น้อยกว่า หรือเท่ากับ 0 ให้ ย้ายไปscene gameover
+                    // ลด๏ฟฝำนวน Wrongnum ลง ๏ฟฝ๏ฟฝ๏ฟฝ ๏ฟฝ๏ฟฝ๏ฟฝ Wrongnum ๏ฟฝ๏ฟฝ๏ฟฝยก๏ฟฝ๏ฟฝ๏ฟฝ ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝากับ 0 ๏ฟฝ๏ฟฝ๏ฟฝ ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝscene gameover
                     DecrementWrongCount();
                     PlayWrongNumSound();
                     if (dialogBob != null)
@@ -198,7 +201,7 @@ public class ActiveInventory : MonoBehaviour
             }
             else
             {
-                Debug.Log("ไม่มีไอเท็มใน slot");
+                Debug.Log("๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ slot");
             }
         }
         else
@@ -210,6 +213,15 @@ public class ActiveInventory : MonoBehaviour
     private void UpdateTrashText()
     {
         numofTrashText.text = numClean + " / " + totalTrashCount.ToString();
+        if (numClean == totalTrashCount)
+        {
+            portalon.SetActive(true);
+            portalOff.SetActive(false) ;
+        }else
+        {
+            portalon.SetActive(false);
+            portalOff.SetActive(true);
+        }
     }
 
     private void DecrementWrongCount()
@@ -219,7 +231,7 @@ public class ActiveInventory : MonoBehaviour
         if (Wrongnum <= 0)
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
-            // เรียกฟังก์ชั่นหยุดเกมหรือส่งไปยังฉาก Game Over ตามที่คุณต้องการ
+            // ๏ฟฝ๏ฟฝ๏ฟฝยก๏ฟฝัง๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝุด๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝัง๏ฟฝาก Game Over ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝุณ๏ฟฝ๏ฟฝอง๏ฟฝ๏ฟฝ๏ฟฝ
             if (currentSceneName == "Map3")
             {
                 SceneManager.LoadScene("GameOverScene");
@@ -230,7 +242,7 @@ public class ActiveInventory : MonoBehaviour
             }
             else
             {
-                // เผื่อว่ามีฉากอื่น ๆ ที่ต้องการไปฉาก Game Over เดียวกัน
+                // ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝีฉาก๏ฟฝ๏ฟฝ๏ฟฝ ๏ฟฝ ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝอง๏ฟฝ๏ฟฝ๏ฟฝไปฉาก Game Over ๏ฟฝ๏ฟฝ๏ฟฝวกัน
                 SceneManager.LoadScene("Home");
             }
         }
@@ -254,7 +266,7 @@ public class ActiveInventory : MonoBehaviour
         }
     }
 
-    // เพิ่มเสียงเอฟเฟคเมื่อทิ้งขยะ
+    // ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝยง๏ฟฝอฟเฟค๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝอท๏ฟฝ้งข๏ฟฝ๏ฟฝ
     public void PlayThrowSound()
     {
         if (throwSound != null && audioSource != null)
@@ -264,7 +276,7 @@ public class ActiveInventory : MonoBehaviour
         }
     }
 
-    // เพิ่มเสียงเอฟเฟคเมื่อ Wrongnum ลดลง
+    // ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝยง๏ฟฝอฟเฟค๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ Wrongnum ลดลง
     public void PlayWrongNumSound()
     {
         if (wrongNumSound != null && audioSource != null)
