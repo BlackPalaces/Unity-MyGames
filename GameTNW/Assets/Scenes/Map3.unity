@@ -7487,7 +7487,7 @@ MonoBehaviour:
   interactDistance: 3
   itemName: "\u0E02\u0E27\u0E14\u0E2A\u0E1A\u0E39\u0E48"
   itemPickupSound: {fileID: 8300000, guid: c945f5cafc5384248b374d17acf7f99f, type: 3}
-  itemType: 0
+  itemType: 3
 --- !u!61 &273588418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66683,7 +66683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunMask: {fileID: 636977157}
-  countdownTime: 360
+  countdownTime: 480
   startingProgressPercentage: 100
 --- !u!114 &636977160
 MonoBehaviour:
@@ -70021,7 +70021,7 @@ MonoBehaviour:
   interactDistance: 3
   itemName: "\u0E2A\u0E21\u0E38\u0E14"
   itemPickupSound: {fileID: 8300000, guid: c945f5cafc5384248b374d17acf7f99f, type: 3}
-  itemType: 3
+  itemType: 1
 --- !u!61 &752575120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74179,7 +74179,7 @@ MonoBehaviour:
   interactDistance: 3
   itemName: "\u0E40\u0E28\u0E29\u0E02\u0E19\u0E21"
   itemPickupSound: {fileID: 8300000, guid: c945f5cafc5384248b374d17acf7f99f, type: 3}
-  itemType: 3
+  itemType: 2
 --- !u!61 &878623930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100057,7 +100057,7 @@ MonoBehaviour:
   interactDistance: 3
   itemName: "\u0E44\u0E02\u0E48\u0E48"
   itemPickupSound: {fileID: 8300000, guid: c945f5cafc5384248b374d17acf7f99f, type: 3}
-  itemType: 1
+  itemType: 2
 --- !u!61 &1926520993
 BoxCollider2D:
   m_ObjectHideFlags: 0
