@@ -19,11 +19,22 @@ public class NpcScript : MonoBehaviour
     public DialogContainer dialogContainer; // อ้างอิงถึง DialogContainer
     private GameObject player;
     private TypewriterEffect typewriterEffect; // Reference to TypewriterEffect
-
+    public SaraController playerController; // เพิ่มตัวแปรสำหรับอ้างอิงไปยังสคริปต์ SaraController
+    public BookInventory Book;
     void Start()
     {
         player = GameObject.FindWithTag("Player");  // Find the player object
         typewriterEffect = dialogText.GetComponent<TypewriterEffect>(); // Get TypewriterEffect component from dialogText
+
+        // ค้นหา PlayerController ในเกม
+        if (playerController == null)
+        {
+            playerController = FindObjectOfType<SaraController>();
+        }
+        if (Book == null)
+        {
+            Book = FindObjectOfType<BookInventory>();
+        }
     }
 
     private void Update()
@@ -86,9 +97,24 @@ public class NpcScript : MonoBehaviour
             currentDialogIndex = 0;
             dialogBox.SetActive(true);
             ShowDialog(currentDialogIndex);
+            // ปิดการทำงานของ PlayerController เมื่อหนังสือเปิด
+            if (playerController != null)
+            {
+                playerController.enabled = false;
+                Book.enabled = false;
+                if (playerController.audioSource != null && playerController.audioSource.isPlaying)
+                {
+                    playerController.audioSource.Stop();
+                }
+            }
         }
         else
         {
+            if (playerController != null)
+            {
+                playerController.enabled = true;
+                Book.enabled = true;
+            }
             Debug.Log("Already in conversation.");
         }
     }
@@ -155,5 +181,10 @@ public class NpcScript : MonoBehaviour
     {
         isDialogActive = false;
         dialogBox.SetActive(false);
+        if (playerController != null)
+        {
+            playerController.enabled = true;
+            Book.enabled = true;
+        }
     }
 }

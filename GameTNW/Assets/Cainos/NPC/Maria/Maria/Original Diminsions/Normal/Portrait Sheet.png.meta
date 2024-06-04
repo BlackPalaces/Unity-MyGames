@@ -1,0 +1,1689 @@
+fileFormatVersion: 2
+guid: 6403245f9b286e34da378694559666e7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Portrait Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 200
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9c3a303343e3e4db571eed689a53cf
+      internalID: 1780498668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 200
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da14ecb8d77b68148a662b2ef17fa06c
+      internalID: 1030317443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 200
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05688750f88e4f24ea7dface29f2676e
+      internalID: -378030581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 200
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2d950c40ebe814aaa64fc427af6b7a
+      internalID: -1361547597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 200
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cab97c834375d44bd583918390644b
+      internalID: -983228006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 200
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebd559d70b735b4287f35e4a55fa50c
+      internalID: -1618718184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 188
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3615aa64c79072744826cf572f967e29
+      internalID: -192816627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704cdd365b149e54abb4d94edff70799
+      internalID: -427778623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 188
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1cab6f98b481a4ca63ec95ba0e9fb5
+      internalID: -1653374052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 188
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b128996b34f23554e995759fae050e26
+      internalID: 1789363232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 188
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defb50904f1dd7b47a2b5f25a2962c7b
+      internalID: -1032516532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e64a4e91b5416a4aac2b66ff7541c99
+      internalID: -129121285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78802193af0625446b91efa54f12f73e
+      internalID: 1560823083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56eb4acd7a188cf4e9a1af16c2f7c100
+      internalID: -1320887364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 188
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d568a8715043e48bf6a494e970116f
+      internalID: -184770067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 188
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b767a41fa486c4f9960e18080ce152
+      internalID: -1101414820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 188
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3e75e15c4601342a8c9b94a7af80dc
+      internalID: 1174216367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 188
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2679d4036b852428998fbed39acad5
+      internalID: -1040057949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b255328148e8e704eb1ba0394f08a182
+      internalID: -234939223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 188
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf268f1cea9d8c43a9999956f9a5341
+      internalID: 1056117420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052d0613c067ccc4bab98bc37a3fa71f
+      internalID: -1898076356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4d441eb0d148f41856a6ad3922ee30
+      internalID: 1622821322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4715c66e2dabf4e915837649b96a05
+      internalID: 1073240520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 188
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc85f5653ad1db4092beabfb3a2bcac
+      internalID: 859480955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1a4e262e15b0d45b87ec2819c9379a
+      internalID: 1824999332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e588b4c8b03f33846bfba20ce8165cde
+      internalID: -494374179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 188
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cffa890ee74b746adefdad910ef1a5
+      internalID: 1510292665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34736fabcffe29640a39f2bdf86fb9ff
+      internalID: -1596229764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 188
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f4073e0b8764745830e5cca541de05
+      internalID: 1845723492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ae6036f07e2f548a0e2ee2ec6a7efd
+      internalID: 942338315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 188
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168f9c0a13df56e4da1d806acf7d974a
+      internalID: -605760911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 188
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe9ffc435b75a143b0a345ccc11f657
+      internalID: -2114225935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 188
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd590ca8d5899f4fbfe6ad409a30092
+      internalID: -1039548489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 100
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb59717549d9bb4495c024c235afacd
+      internalID: -1894931246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 100
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9ebdb56ad0d9f4da2383ef1e41334d
+      internalID: 96103907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 100
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099dc50f9788dcf43b25a9d000e7c4ec
+      internalID: -1503956498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 100
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dabcad729683043ad3a37c785e02f2
+      internalID: -1283435609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 100
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b063604fe55caa645aac27d7247ea227
+      internalID: -1293655910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 100
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caff4bb1d52cc5b42935f4ee0b56efec
+      internalID: -129395389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb72f0bddf8ef1c4db5c0be209da4728
+      internalID: -88529825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 88
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7130b6db0f8e65442ade5d4020129288
+      internalID: -448338405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 88
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a618c772945be43863549c23798c25
+      internalID: -660018565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 88
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4eec0158730e54e9ebf1bbbe85b2e0
+      internalID: -1937423478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 88
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf250861b4349a4b9694f1c274eb0aa
+      internalID: -1562523870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 88
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d66c99a41de2648a6da626af8de098
+      internalID: -1114816638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a534b0cd002da44c903bc6c25c0728e
+      internalID: -648311276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 88
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5805930809a7b7f49a3663913de58bbc
+      internalID: -981923593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1b6e25d0a52544dbd6493e629c9412
+      internalID: -1707277158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a70b16569a118418660a1d123d0ba3
+      internalID: -230666328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 88
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7e958bea172054c98e88e2603875b9
+      internalID: 509556753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da9485a572fac74085fd971ee7028c9
+      internalID: -1735584883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cfbafd3a52b7745b1376e9ad216296
+      internalID: -885130902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 88
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d3e4bdb683eef4eac1f1d3e8f9d1ec
+      internalID: -50821539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531d779b95ade1c479a213c74ff99a3c
+      internalID: -1052774873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 88
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797548d9c2f197245ab3a6a314010f6e
+      internalID: -919708121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 88
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5924a56f62444c48bffd966739358c9
+      internalID: -436752743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86729a99758c8584f8c1e01cb1af1d92
+      internalID: 109921271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 88
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f1eeb39c5f2fd408a04709def88ed6
+      internalID: 789794228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7139552372882a846804d71e7b544820
+      internalID: 760795237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 88
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bb97cd96385b349b4fa95c28f8b6ba
+      internalID: -1725488155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76500000837c7594f9b639a5efd181f7
+      internalID: 1452702630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 88
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f10e47d2cf5a64f8d959949c0f04b0
+      internalID: -1476469007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 88
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28bfeb2d741dfd7449e22116940de246
+      internalID: 1497425536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 88
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4188580559cb044a8bd727c9bff28f
+      internalID: 1292485645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 88
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da54f7d1777dd3c4eaa01379f09792e9
+      internalID: 951751655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471cb109614212045bb4e5b14a1daed9
+      internalID: 992500439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f374f2a45e990e441adbfbbe473842fc
+      internalID: -1554323193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6e20fa53eb1fb4599fd03a1f5c0894
+      internalID: 941034858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 88
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22857a5ff9197a743be975b115ce16fc
+      internalID: -1367749125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 88
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03cf23e300bfe94a8e1a4ec232325b6
+      internalID: -1123359120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 88
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a52f26348c877b49a6be4f019ec331c
+      internalID: -468321058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Portrait Sheet_0: 1780498668
+      Portrait Sheet_1: 1030317443
+      Portrait Sheet_10: -1032516532
+      Portrait Sheet_11: -129121285
+      Portrait Sheet_12: 1560823083
+      Portrait Sheet_13: -1320887364
+      Portrait Sheet_14: -184770067
+      Portrait Sheet_15: -1101414820
+      Portrait Sheet_16: 1174216367
+      Portrait Sheet_17: -1040057949
+      Portrait Sheet_18: -234939223
+      Portrait Sheet_19: 1056117420
+      Portrait Sheet_2: -378030581
+      Portrait Sheet_20: -1898076356
+      Portrait Sheet_21: 1622821322
+      Portrait Sheet_22: 1073240520
+      Portrait Sheet_23: 859480955
+      Portrait Sheet_24: 1824999332
+      Portrait Sheet_25: -494374179
+      Portrait Sheet_26: 1510292665
+      Portrait Sheet_27: -1596229764
+      Portrait Sheet_28: 1845723492
+      Portrait Sheet_29: 942338315
+      Portrait Sheet_3: -1361547597
+      Portrait Sheet_30: -605760911
+      Portrait Sheet_31: -2114225935
+      Portrait Sheet_32: -1039548489
+      Portrait Sheet_33: -1894931246
+      Portrait Sheet_34: 96103907
+      Portrait Sheet_35: -1503956498
+      Portrait Sheet_36: -1283435609
+      Portrait Sheet_37: -1293655910
+      Portrait Sheet_38: -129395389
+      Portrait Sheet_39: -88529825
+      Portrait Sheet_4: -983228006
+      Portrait Sheet_40: -448338405
+      Portrait Sheet_41: -660018565
+      Portrait Sheet_42: -1937423478
+      Portrait Sheet_43: -1562523870
+      Portrait Sheet_44: -1114816638
+      Portrait Sheet_45: -648311276
+      Portrait Sheet_46: -981923593
+      Portrait Sheet_47: -1707277158
+      Portrait Sheet_48: -230666328
+      Portrait Sheet_49: 509556753
+      Portrait Sheet_5: -1618718184
+      Portrait Sheet_50: -1735584883
+      Portrait Sheet_51: -885130902
+      Portrait Sheet_52: -50821539
+      Portrait Sheet_53: -1052774873
+      Portrait Sheet_54: -919708121
+      Portrait Sheet_55: -436752743
+      Portrait Sheet_56: 109921271
+      Portrait Sheet_57: 789794228
+      Portrait Sheet_58: 760795237
+      Portrait Sheet_59: -1725488155
+      Portrait Sheet_6: -192816627
+      Portrait Sheet_60: 1452702630
+      Portrait Sheet_61: -1476469007
+      Portrait Sheet_62: 1497425536
+      Portrait Sheet_63: 1292485645
+      Portrait Sheet_64: 951751655
+      Portrait Sheet_65: 992500439
+      Portrait Sheet_66: -1554323193
+      Portrait Sheet_67: 941034858
+      Portrait Sheet_68: -1367749125
+      Portrait Sheet_69: -1123359120
+      Portrait Sheet_7: -427778623
+      Portrait Sheet_70: -468321058
+      Portrait Sheet_8: -1653374052
+      Portrait Sheet_9: 1789363232
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
