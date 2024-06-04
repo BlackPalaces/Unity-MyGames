@@ -19,6 +19,7 @@ public class ActiveInventory : MonoBehaviour
     
     public AudioClip throwSound;
     public AudioClip wrongNumSound;
+    public AudioClip doorSound;
     public AudioClip Slotsound;
     private AudioSource audioSource;
     public GameObject numofitems;
@@ -30,6 +31,7 @@ public class ActiveInventory : MonoBehaviour
     private bool portal;
     public GameObject portalon;
     public GameObject portalOff;
+
     private void Awake()
     {
         saraControls = new SaraControls();
@@ -217,6 +219,7 @@ public class ActiveInventory : MonoBehaviour
         {
             portalon.SetActive(true);
             portalOff.SetActive(false) ;
+            PlayDoorSound();
         }else
         {
             portalon.SetActive(false);
@@ -232,18 +235,22 @@ public class ActiveInventory : MonoBehaviour
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
             // ���¡�ѧ������ش����������ѧ�ҡ Game Over ������س��ͧ���
-            if (currentSceneName == "Map3")
+            if (currentSceneName == "Map4")
+            {
+                SceneManager.LoadScene("GameOverScene4");
+            }
+            else if (currentSceneName == "Map3")
             {
                 SceneManager.LoadScene("GameOverScene");
             }
             else if (currentSceneName == "Map2")
             {
-                SceneManager.LoadScene("Home");
+                // ��������թҡ��� � ����ͧ���仩ҡ Game Over ���ǡѹ
+                SceneManager.LoadScene("GameOverScene2");
             }
             else
             {
-                // ��������թҡ��� � ����ͧ���仩ҡ Game Over ���ǡѹ
-                SceneManager.LoadScene("Home");
+                SceneManager.LoadScene("GameOverScene1");
             }
         }
     }
@@ -291,6 +298,14 @@ public class ActiveInventory : MonoBehaviour
         if (Slotsound != null && audioSource != null)
         {
             audioSource.clip = Slotsound;
+            audioSource.Play();
+        }
+    }
+    public void PlayDoorSound()
+    {
+        if (doorSound != null && audioSource != null)
+        {
+            audioSource.clip = doorSound;
             audioSource.Play();
         }
     }

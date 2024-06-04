@@ -62,6 +62,9 @@ TagManager:
   - name: Player
     uniqueID: 2784339233
     locked: 0
+  - name: ObJMaterial
+    uniqueID: 2975597925
+    locked: 0
   - name: TallObject
     uniqueID: 365267849
     locked: 0
