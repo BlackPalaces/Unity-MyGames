@@ -13,6 +13,10 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Home");
     }
+    public void LoadEdHome(string sceneName)
+    {
+        SceneManager.LoadScene("EdHome");
+    }
 
     public void QuitApp()
     {
