@@ -21,9 +21,17 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Map1");
     }
+    public void LoadFinal(string sceneName)
+    {
+        SceneManager.LoadScene("MapFinal");
+    }
     public void LoadEdHome(string sceneName)
     {
         SceneManager.LoadScene("EdHome");
+    }
+    public void Home(string sceneName)
+    {
+        SceneManager.LoadScene("Home");
     }
 
     public void QuitApp()

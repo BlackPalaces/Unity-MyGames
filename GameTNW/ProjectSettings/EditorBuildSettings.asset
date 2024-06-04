@@ -21,9 +21,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MapFinal.unity
     guid: 17b2c5dffef6eff47a9c586d9785cf44
   - enabled: 1
-    path: Assets/Scenes/GameOverScene.unity
+    path: Assets/Scenes/Win.unity
+    guid: e2310143ec2681d4980335f0ffae80d4
+  - enabled: 1
+    path: Assets/Scenes/GameOverScenes2.unity
     guid: fbe84d0587e7c4643879359b25d0df3c
   - enabled: 1
-    path: Assets/Scenes/GameOverScene1.unity
-    guid: 4bea0ac306550e84899fb8977251b804
+    path: Assets/Scenes/GameOverScenes1.unity
+    guid: 1717e4b80e207fc43a2adb5da59adc11
+  - enabled: 1
+    path: Assets/Scenes/GameOverScenes3.unity
+    guid: 03de44ace597d4243b49d261ba1ad97a
   m_configObjects: {}

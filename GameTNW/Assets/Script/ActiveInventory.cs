@@ -235,9 +235,9 @@ public class ActiveInventory : MonoBehaviour
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
             // ���¡�ѧ������ش����������ѧ�ҡ Game Over ������س��ͧ���
-            if (currentSceneName == "Map4")
+            if (currentSceneName == "MapFinal")
             {
-                SceneManager.LoadScene("GameOverScene4");
+                SceneManager.LoadScene("GameOverScenes3");
             }
             else if (currentSceneName == "Map3")
             {
@@ -246,11 +246,11 @@ public class ActiveInventory : MonoBehaviour
             else if (currentSceneName == "Map2")
             {
                 // ��������թҡ��� � ����ͧ���仩ҡ Game Over ���ǡѹ
-                SceneManager.LoadScene("GameOverScene2");
+                SceneManager.LoadScene("GameOverScenes2");
             }
             else
             {
-                SceneManager.LoadScene("GameOverScene1");
+                SceneManager.LoadScene("GameOverScenes1");
             }
         }
     }

@@ -43,7 +43,15 @@ public class FillAmountController : MonoBehaviour
             }
             else if (currentSceneName == "Map2")
             {
-                SceneManager.LoadScene("Home");
+                SceneManager.LoadScene("GameOverScenes2");
+            }
+            else if (currentSceneName == "Map1")
+            {
+                SceneManager.LoadScene("GameOverScenes1");
+            }
+            else if (currentSceneName == "MapFinal")
+            {
+                SceneManager.LoadScene("GameOverScenes3");
             }
             else
             {
