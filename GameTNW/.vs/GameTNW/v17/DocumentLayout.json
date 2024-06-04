@@ -1,81 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\",
+  "WorkspaceRootPath": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|c:\\users\\advice\\documents\\github\\unity-mygames\\gametnw\\assets\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|c:\\users\\msii\\documents\\github\\unity-mygames\\gametnw\\assets\\script\\cardscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\cardscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\activeinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\activeinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\activeinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\fillamountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\fillamountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fillamountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\saracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\saracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\saracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\dialogbob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\dialogbob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialogbob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\typewritereffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\typewritereffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\typewritereffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\textshake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\textshake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\textshake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\npcscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\npcscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\npcscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\bookinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\bookinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\bookinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\npcdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\npcdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\npcdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\dialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\dialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\dialogcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\dialogcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialogcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\trashcan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\trashcan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trashcan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Editor\\VisualScripting.Flow\\Options\\UnitBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Editor\\VisualScripting.Flow\\Options\\UnitBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Editor\\VisualScripting.Flow\\Options\\UnitBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\assets\\script\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE78B4AC-D1C7-C717-391E-5DCFC438BACC}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -101,11 +105,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "ErrorTypeText.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\ErrorTypeText.cs",
               "ToolTip": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\ErrorTypeText.cs",
@@ -116,11 +120,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "CardScript.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\CardScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\CardScript.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\CardScript.cs",
+              "RelativeToolTip": "Assets\\Script\\CardScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T20:06:41.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "TypewriterEffect.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TypewriterEffect.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TypewriterEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\TypewriterEffect.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TypewriterEffect.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TypewriterEffect.cs",
               "RelativeToolTip": "Assets\\Script\\TypewriterEffect.cs",
               "ViewState": "AQIAAFgAAAAAAAAAAAAuwGsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -128,11 +145,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DialogBob.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogBob.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogBob.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\DialogBob.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogBob.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogBob.cs",
               "RelativeToolTip": "Assets\\Script\\DialogBob.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAAACEAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -140,11 +157,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "NpcScript.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcScript.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcScript.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\NpcScript.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcScript.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcScript.cs",
               "RelativeToolTip": "Assets\\Script\\NpcScript.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAHcAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -152,11 +169,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "NpcDialog.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcDialog.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcDialog.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\NpcDialog.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcDialog.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\NpcDialog.cs",
               "RelativeToolTip": "Assets\\Script\\NpcDialog.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -164,11 +181,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ItemPickup.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\ItemPickup.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\ItemPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ItemPickup.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\ItemPickup.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\ItemPickup.cs",
               "RelativeToolTip": "Assets\\Script\\ItemPickup.cs",
               "ViewState": "AQIAAEEAAAAAAAAAAAAgwFkAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -176,11 +193,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "BookInventory.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\BookInventory.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\BookInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\BookInventory.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\BookInventory.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\BookInventory.cs",
               "RelativeToolTip": "Assets\\Script\\BookInventory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -188,36 +205,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SceneManager.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\SceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\SceneManager.cs",
               "RelativeDocumentMoniker": "Assets\\SceneManager.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\SceneManager.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\SceneManager.cs",
               "RelativeToolTip": "Assets\\SceneManager.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAYwCEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T16:22:26.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T16:22:26.186Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ActiveInventory.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\ActiveInventory.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\ActiveInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ActiveInventory.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\ActiveInventory.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\ActiveInventory.cs",
               "RelativeToolTip": "Assets\\Script\\ActiveInventory.cs",
-              "ViewState": "AQIAAOEAAAAAAAAAAAAcwPAAAAANAAAA",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAywBgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T16:21:17.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FillAmountController.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\FillAmountController.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\FillAmountController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\FillAmountController.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\FillAmountController.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\FillAmountController.cs",
               "RelativeToolTip": "Assets\\Script\\FillAmountController.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAQwCkAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -225,11 +241,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SaraController.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\SaraController.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\SaraController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\SaraController.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\SaraController.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\SaraController.cs",
               "RelativeToolTip": "Assets\\Script\\SaraController.cs",
               "ViewState": "AQIAAG8AAAAAAAAAAAAIwIUAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -237,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "FetchUserNameScript.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\FetchUserNameScript.cs",
               "ToolTip": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\FetchUserNameScript.cs",
@@ -247,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "CardScript.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\CardScript.cs",
               "ToolTip": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\CardScript.cs",
@@ -257,11 +273,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Portal.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Portal.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Portal.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Portal.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Portal.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Portal.cs",
               "RelativeToolTip": "Assets\\Script\\Portal.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -269,11 +285,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TextShake.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TextShake.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TextShake.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\TextShake.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TextShake.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TextShake.cs",
               "RelativeToolTip": "Assets\\Script\\TextShake.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAuwA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -281,11 +297,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DialogManager.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogManager.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\DialogManager.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogManager.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogManager.cs",
               "RelativeToolTip": "Assets\\Script\\DialogManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -293,11 +309,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Dialog.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Dialog.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Dialog.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Dialog.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Dialog.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Dialog.cs",
               "RelativeToolTip": "Assets\\Script\\Dialog.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -305,11 +321,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "DialogContainer.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogContainer.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogContainer.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\DialogContainer.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogContainer.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\DialogContainer.cs",
               "RelativeToolTip": "Assets\\Script\\DialogContainer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -317,11 +333,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "TrashCan.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TrashCan.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TrashCan.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\TrashCan.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TrashCan.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\TrashCan.cs",
               "RelativeToolTip": "Assets\\Script\\TrashCan.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAAAEsAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -329,11 +345,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UnitBase.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Editor\\VisualScripting.Flow\\Options\\UnitBase.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Editor\\VisualScripting.Flow\\Options\\UnitBase.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Editor\\VisualScripting.Flow\\Options\\UnitBase.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Editor\\VisualScripting.Flow\\Options\\UnitBase.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Editor\\VisualScripting.Flow\\Options\\UnitBase.cs",
               "RelativeToolTip": "Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Editor\\VisualScripting.Flow\\Options\\UnitBase.cs",
               "ViewState": "AQIAAHEDAAAAAAAAAAAAAIIAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -341,11 +357,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Book.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Book.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Book.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\Book.cs",
               "RelativeToolTip": "Assets\\Script\\Book.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -353,11 +369,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\GameController.cs",
+              "DocumentMoniker": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\GameController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\GameController.cs",
-              "ToolTip": "C:\\Users\\advice\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\GameController.cs",
+              "ToolTip": "C:\\Users\\MSII\\Documents\\GitHub\\Unity-MyGames\\GameTNW\\Assets\\Script\\GameController.cs",
               "RelativeToolTip": "Assets\\Script\\GameController.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAYwCAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -365,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "SunScript.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\SunScript.cs",
               "ToolTip": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\SunScript.cs",
@@ -375,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Menu.cs",
               "DocumentMoniker": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\Menu.cs",
               "ToolTip": "N:\\UnityGameProject\\Unity-MyGames\\GameTNW\\Assets\\Script\\Menu.cs",

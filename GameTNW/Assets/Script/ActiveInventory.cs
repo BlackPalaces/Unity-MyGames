@@ -1,13 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem;
 using TMPro;
-using static TrashCan;
-using static ItemPickup;
 using System;
-using static UnityEditor.Progress;
 using UnityEngine.SceneManagement;
 
 
@@ -28,7 +23,6 @@ public class ActiveInventory : MonoBehaviour
     public int Wrongnum = 3;  //�ӹǹ�������ö��駼Դ�� ���������鹤�� 3 ������ö����¹��
     private int numClean = 0;
     private int totalTrashCount;
-    private bool portal;
     public GameObject portalon;
     public GameObject portalOff;
 

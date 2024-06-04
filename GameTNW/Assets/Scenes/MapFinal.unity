@@ -143349,7 +143349,7 @@ MonoBehaviour:
   interactDistance: 3
   itemName: "\u0E14\u0E32\u0E1A"
   itemPickupSound: {fileID: 8300000, guid: c945f5cafc5384248b374d17acf7f99f, type: 3}
-  itemType: 0
+  itemType: 1
 --- !u!61 &1735293915
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146399,7 +146399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemCanvasPrefab: {fileID: 385808783}
   interactDistance: 3
-  itemName: "\u0E02\u0E27\u0E14\u0E41\u0E01\u0E49\u0E27"
+  itemName: "\u0E02\u0E27\u0E14\u0E41\u0E01\u0E49\u0E27\u0E41\u0E15\u0E01"
   itemPickupSound: {fileID: 8300000, guid: c945f5cafc5384248b374d17acf7f99f, type: 3}
   itemType: 0
 --- !u!61 &2102026965

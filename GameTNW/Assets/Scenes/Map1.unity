@@ -4488,7 +4488,7 @@ MonoBehaviour:
   dialogBob: {fileID: 0}
   throwSound: {fileID: 8300000, guid: c945f5cafc5384248b374d17acf7f99f, type: 3}
   wrongNumSound: {fileID: 8300000, guid: 0bced888701a30e45a4c843d7da4c586, type: 3}
-  doorSound: {fileID: 0}
+  doorSound: {fileID: 8300000, guid: cdfb625b1e748914a9b2e6a7bf06abe3, type: 3}
   Slotsound: {fileID: 8300000, guid: b19f0b9680ff68146b55a4436c1d535a, type: 3}
   numofitems: {fileID: 1678795660}
   numofTrashText: {fileID: 1997471823}
