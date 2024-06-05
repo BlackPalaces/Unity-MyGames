@@ -21,11 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MapFinal.unity
     guid: 17b2c5dffef6eff47a9c586d9785cf44
   - enabled: 1
-    path: Assets/Scenes/EdHome.unity
-    guid: 7e03c9b6ce0640841b612c3f705dd081
-  - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: e2310143ec2681d4980335f0ffae80d4
+  - enabled: 1
+    path: Assets/Scenes/EdHome.unity
+    guid: 7e03c9b6ce0640841b612c3f705dd081
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: bb522ed1fbb1157499207f54c85e451e

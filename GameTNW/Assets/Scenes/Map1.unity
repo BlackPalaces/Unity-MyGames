@@ -39317,8 +39317,7 @@ Transform:
   m_LocalPosition: {x: -2.3, y: -2, z: -15.454597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1365949322}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &209690324
@@ -45717,7 +45716,7 @@ Transform:
   m_GameObject: {fileID: 644194547}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -72.97, y: 4.07, z: -4.0867457}
+  m_LocalPosition: {x: -72.97, y: 1.66, z: -4.0867457}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57544,7 +57543,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 95d0f658c6b022648916f7a1a0e89e72, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.01
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -57637,11 +57636,11 @@ Transform:
   m_GameObject: {fileID: 1365949320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.200736, y: 4.3179593, z: 15.471935}
+  m_LocalPosition: {x: 6.900736, y: 2.3179593, z: 0.0173378}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 207702168}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366834168
 GameObject:
@@ -66017,7 +66016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemCanvasPrefab: {fileID: 334704450}
   interactDistance: 3
-  itemName: "\u0E02\u0E27\u0E14\u0E41\u0E15\u0E01"
+  itemName: "\u0E02\u0E27\u0E14\u0E41\u0E01\u0E49\u0E27\u0E17\u0E35\u0E48\u0E41\u0E15\u0E01"
   itemPickupSound: {fileID: 8300000, guid: c945f5cafc5384248b374d17acf7f99f, type: 3}
   itemType: 0
 --- !u!61 &1668307939
@@ -83488,7 +83487,7 @@ Transform:
   m_GameObject: {fileID: 2121371693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -58.79, y: -18.29, z: -4.0867457}
+  m_LocalPosition: {x: -59.03, y: -18.29, z: -4.0867457}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83730,6 +83729,7 @@ SceneRoots:
   - {fileID: 1396888360}
   - {fileID: 848403411}
   - {fileID: 336543207}
+  - {fileID: 1365949322}
   - {fileID: 207702168}
   - {fileID: 1339954240}
   - {fileID: 1931733606}
