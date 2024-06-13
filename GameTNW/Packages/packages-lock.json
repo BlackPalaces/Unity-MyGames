@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.netpyoung.webp": {
+      "version": "https://github.com/netpyoung/unity.webp.git?path=unity_project/Assets/unity.webp",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "17a9eb9c31dfc39062410e2c672291ebb9ce8b86"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.3",
       "depth": 1,
@@ -185,6 +192,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.postprocessing": {
       "version": "3.2.2",
       "depth": 0,
@@ -282,6 +296,16 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "dev.vanhoof.tiktokliveunity": {
+      "version": "https://github.com/frankvHoof93/TikTokLiveSharp.git#TikTokLiveUnity",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.2",
+        "com.unity.textmeshpro": "3.0.0"
+      },
+      "hash": "18ae546fb82778ef105c2b7997f70558f89b9163"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

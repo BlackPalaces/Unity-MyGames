@@ -25,7 +25,7 @@ public class ActiveInventory : MonoBehaviour
     private int totalTrashCount;
     public GameObject portalon;
     public GameObject portalOff;
-
+    public TMP_Text PluseWrong;
     private void Awake()
     {
         saraControls = new SaraControls();
@@ -47,7 +47,73 @@ public class ActiveInventory : MonoBehaviour
         }
     }
 
-    private void OnEnable()
+
+    IEnumerator ShowAndHideText(string text, float duration)
+    {
+        // Set PluseTime text
+        PluseWrong.SetText(text);
+        // Show PluseTime
+        PluseWrong.gameObject.SetActive(true);
+
+        // Initial alpha value
+        float startAlpha = 1f;
+        // Final alpha value
+        float endAlpha = 0f;
+        // Duration for fading
+        float fadeDuration = 1f;
+
+        // Start position
+        Vector3 startPosition = PluseWrong.transform.position;
+        // Target position (slightly above the start position)
+        Vector3 targetPosition = startPosition + new Vector3(0f, 20f, 0f);
+        // Duration for moving up
+        float moveDuration = 1f;
+
+        // Moving animation
+        float timer = 0f;
+        while (timer < moveDuration)
+        {
+            timer += Time.deltaTime;
+            float t = timer / moveDuration;
+            PluseWrong.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            yield return null;
+        }
+
+        // Fading animation
+        timer = 0f;
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, endAlpha, timer / fadeDuration);
+            Color textColor = PluseWrong.color;
+            textColor.a = alpha;
+            PluseWrong.color = textColor;
+            yield return null;
+        }
+
+        // Hide PluseTime
+        PluseWrong.gameObject.SetActive(false);
+        // Reset alpha value
+        Color resetColor = PluseWrong.color;
+        resetColor.a = startAlpha;
+        PluseWrong.color = resetColor;
+        // Reset position
+        PluseWrong.transform.position = startPosition;
+    }
+    void Update()
+    {
+        // ตรวจสอบการกดปุ่ม T
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            // เพิ่มเวลา 5 นาที
+            Wrongnum += 1;
+            // เรียกใช้ Coroutine เพื่อแสดงข้อความ "+300s" เป็นเวลาจำนวน 5 นาที
+            StartCoroutine(ShowAndHideText("+1", 2f)); // 2 วินาทีคือระยะเวลาที่ต้องการให้แสดงข้อความ
+            WrongCountText.text = Wrongnum.ToString();
+        }
+    }
+
+        private void OnEnable()
     {
         if (saraControls != null)
         {
@@ -242,6 +308,10 @@ public class ActiveInventory : MonoBehaviour
                 // ��������թҡ��� � ����ͧ���仩ҡ Game Over ���ǡѹ
                 SceneManager.LoadScene("GameOverScenes2");
             }
+            else if (currentSceneName == "MapFortiktok")
+            {
+                SceneManager.LoadScene("GameOverScene");
+            }
             else
             {
                 SceneManager.LoadScene("GameOverScenes1");
@@ -253,19 +323,52 @@ public class ActiveInventory : MonoBehaviour
     {
         if (activeSlotIndexNum >= 0 && activeSlotIndexNum < transform.childCount)
         {
+            // Clear the active slot first
             Transform activeSlot = transform.GetChild(activeSlotIndexNum);
             Image slotImage = activeSlot.GetChild(1).GetComponent<Image>();
 
             if (slotImage.sprite != null)
             {
+                // Start clearing the current active slot
                 slotImage.sprite = null;
                 slotImage.enabled = false;
                 activeSlot.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
                 activeSlot.GetChild(3).GetComponent<TextMeshProUGUI>().text = "";
+
+                // Shift items in subsequent slots up
+                for (int i = activeSlotIndexNum; i < transform.childCount - 1; i++)
+                {
+                    Transform currentSlot = transform.GetChild(i);
+                    Transform nextSlot = transform.GetChild(i + 1);
+
+                    Image currentSlotImage = currentSlot.GetChild(1).GetComponent<Image>();
+                    Image nextSlotImage = nextSlot.GetChild(1).GetComponent<Image>();
+
+                    TextMeshProUGUI currentSlotName = currentSlot.GetChild(2).GetComponent<TextMeshProUGUI>();
+                    TextMeshProUGUI nextSlotName = nextSlot.GetChild(2).GetComponent<TextMeshProUGUI>();
+
+                    TextMeshProUGUI currentSlotType = currentSlot.GetChild(3).GetComponent<TextMeshProUGUI>();
+                    TextMeshProUGUI nextSlotType = nextSlot.GetChild(3).GetComponent<TextMeshProUGUI>();
+
+                    // Move the next slot's contents to the current slot
+                    currentSlotImage.sprite = nextSlotImage.sprite;
+                    currentSlotImage.enabled = nextSlotImage.sprite != null;
+
+                    currentSlotName.text = nextSlotName.text;
+                    currentSlotType.text = nextSlotType.text;
+
+                    // Clear the next slot
+                    nextSlotImage.sprite = null;
+                    nextSlotImage.enabled = false;
+                    nextSlotName.text = "";
+                    nextSlotType.text = "";
+                }
+
                 Debug.Log("Active item removed from slot: " + activeSlotIndexNum);
             }
         }
     }
+
 
     // �������§�Ϳ࿤����ͷ�駢��
     public void PlayThrowSound()

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.netpyoung.webp": "https://github.com/netpyoung/unity.webp.git?path=unity_project/Assets/unity.webp",
     "com.unity.cinemachine": "2.9.7",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.2d": "2.0.0",
@@ -13,6 +14,7 @@
     "com.unity.timeline": "1.7.5",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.0",
+    "dev.vanhoof.tiktokliveunity": "https://github.com/frankvHoof93/TikTokLiveSharp.git#TikTokLiveUnity",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
